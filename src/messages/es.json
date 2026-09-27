@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "testimonials": "Testimonios",
+    "blog": "Blog",
+    "contact": "Contacto"
+  },
+  "common": {
+    "placeholder": "Sitio en construcción"
+  }
+}

@@ -1,0 +1,138 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum Category {
+  ESTUDIO
+  PRODUCTORA
+  DISENO
+  IMPRENTA
+  MARKETING
+  CONSULTORIA
+}
+
+enum LeadType {
+  CONTACT
+  LEAD_MAGNET
+  NEWSLETTER
+}
+
+enum LeadStatus {
+  NUEVO
+  CONTACTADO
+}
+
+model AdminUser {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Service {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique
+  title       Json
+  description Json
+  category    Category
+  icon        String
+  details     Json
+  ctaText     Json
+  image       String
+  sortOrder   Int      @default(0)
+  published   Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Project {
+  id          Int      @id @default(autoincrement())
+  slug        String   @unique
+  title       Json
+  client      String?
+  category    Category
+  description Json
+  videoUrlRaw String?
+  image       String
+  sortOrder   Int      @default(0)
+  published   Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Brand {
+  id        Int     @id @default(autoincrement())
+  name      String
+  logoUrl   String
+  sortOrder Int     @default(0)
+  published Boolean @default(true)
+}
+
+model Testimonial {
+  id        Int     @id @default(autoincrement())
+  name      String
+  role      Json
+  quote     Json
+  image     String?
+  sortOrder Int     @default(0)
+  published Boolean @default(true)
+}
+
+model BlogPost {
+  id          Int       @id @default(autoincrement())
+  slug        String    @unique
+  title       Json
+  excerpt     Json
+  content     Json
+  category    String?
+  image       String?
+  publishedAt DateTime?
+  published   Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Section {
+  id        Int     @id @default(autoincrement())
+  key       String  @unique
+  enabled   Boolean @default(true)
+  sortOrder Int     @default(0)
+}
+
+model SiteSetting {
+  id                 Int      @id @default(1)
+  whatsappNumber     String?
+  alternativePhone   String?
+  contactEmail       String?
+  address            String?
+  instagramUrl       String?
+  facebookUrl        String?
+  tiktokUrl          String?
+  youtubeUrl         String?
+  metaDescription    Json
+  heroTitle1         Json
+  heroTitle2         Json
+  heroTitle3         Json
+  heroDescription    Json
+  heroVideoYoutubeId String?
+  logoUrl            String?
+  freeResourceUrl    String?
+  updatedAt          DateTime @updatedAt
+}
+
+model Lead {
+  id        Int        @id @default(autoincrement())
+  type      LeadType
+  name      String?
+  contact   String
+  message   String?    @db.Text
+  service   String?
+  status    LeadStatus @default(NUEVO)
+  createdAt DateTime   @default(now())
+}
