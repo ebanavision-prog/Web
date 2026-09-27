@@ -1,0 +1,1854 @@
+{
+  "services": [
+    {
+      "id": 76,
+      "date": "2026-07-31T00:47:25",
+      "date_gmt": "2026-07-31T00:47:25",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/?post_type=servicio&#038;p=76"
+      },
+      "modified": "2026-07-31T02:48:18",
+      "modified_gmt": "2026-07-31T02:48:18",
+      "slug": "consultoria-creativa",
+      "status": "publish",
+      "type": "servicio",
+      "link": "https://cms.ebanavision.com/servicio/consultoria-creativa/",
+      "title": {
+        "rendered": "Consultoría Creativa"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-76",
+        "servicio",
+        "type-servicio",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "descripcion": "Acompañamiento estratégico para proyectos que combinan varios de nuestros servicios.",
+        "categoria": "Consultoría",
+        "icono": "award",
+        "detalles": "Diagnóstico de marca\nPlan de acción a medida\nCoordinación de equipos creativos\nSeguimiento de resultados",
+        "texto_cta": "Agenda una consultoría"
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio/76",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/servicio"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=76"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 75,
+      "date": "2026-07-31T00:45:22",
+      "date_gmt": "2026-07-31T00:45:22",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/?post_type=servicio&#038;p=75"
+      },
+      "modified": "2026-07-31T02:48:52",
+      "modified_gmt": "2026-07-31T02:48:52",
+      "slug": "marketing-y-estrategia-digital",
+      "status": "publish",
+      "type": "servicio",
+      "link": "https://cms.ebanavision.com/servicio/marketing-y-estrategia-digital/",
+      "title": {
+        "rendered": "Marketing y Estrategia Digital"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-75",
+        "servicio",
+        "type-servicio",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "descripcion": "Estrategias de marketing y gestión de redes sociales que conectan tu marca con tu audiencia.",
+        "categoria": "Marketing",
+        "icono": "target",
+        "detalles": "Gestión de redes sociales\nEstrategia y calendario de contenidos\nPublicidad digital\nAnálisis de resultados",
+        "texto_cta": "Impulsa tu marca"
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio/75",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/servicio"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=75"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 74,
+      "date": "2026-07-31T00:44:46",
+      "date_gmt": "2026-07-31T00:44:46",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/?post_type=servicio&#038;p=74"
+      },
+      "modified": "2026-07-31T02:48:53",
+      "modified_gmt": "2026-07-31T02:48:53",
+      "slug": "imprenta-y-produccion-grafica",
+      "status": "publish",
+      "type": "servicio",
+      "link": "https://cms.ebanavision.com/servicio/imprenta-y-produccion-grafica/",
+      "title": {
+        "rendered": "Imprenta y Producción Gráfica"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-74",
+        "servicio",
+        "type-servicio",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "descripcion": "Impresión de alta calidad para eventos, señalética y material corporativo.",
+        "categoria": "Imprenta",
+        "icono": "printer",
+        "detalles": "Impresión de gran formato\nPapelería corporativa\nVinilado y señalética\nProducción para eventos",
+        "texto_cta": "Solicita tu cotización"
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio/74",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/servicio"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=74"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 73,
+      "date": "2026-07-31T00:43:29",
+      "date_gmt": "2026-07-31T00:43:29",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/?post_type=servicio&#038;p=73"
+      },
+      "modified": "2026-07-31T02:48:53",
+      "modified_gmt": "2026-07-31T02:48:53",
+      "slug": "diseno-y-branding",
+      "status": "publish",
+      "type": "servicio",
+      "link": "https://cms.ebanavision.com/servicio/diseno-y-branding/",
+      "title": {
+        "rendered": "Diseño y Branding"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-73",
+        "servicio",
+        "type-servicio",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "descripcion": "Identidad visual y diseño gráfico que convierte marcas en experiencias memorables.",
+        "categoria": "Diseño",
+        "icono": "pen-tool",
+        "detalles": "Diseño de logotipo e identidad de marca\nManuales de marca\nDiseño editorial y de campañas\nDiseño digital para redes y web",
+        "texto_cta": "Eleva tu marca"
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio/73",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/servicio"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=73"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 72,
+      "date": "2026-07-31T00:42:33",
+      "date_gmt": "2026-07-31T00:42:33",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/?post_type=servicio&#038;p=72"
+      },
+      "modified": "2026-07-31T02:48:54",
+      "modified_gmt": "2026-07-31T02:48:54",
+      "slug": "titulo-produccion-audiovisual",
+      "status": "publish",
+      "type": "servicio",
+      "link": "https://cms.ebanavision.com/servicio/titulo-produccion-audiovisual/",
+      "title": {
+        "rendered": "Producción Audiovisual"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-72",
+        "servicio",
+        "type-servicio",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "descripcion": "Spots, documentales y contenido de video de principio a fin: guion, rodaje y postproducción.",
+        "categoria": "Productora",
+        "icono": "video",
+        "detalles": "Spots publicitarios y corporativos\nDocumentales y contenido de marca\nCobertura de eventos en video\nMotion graphics y edición",
+        "texto_cta": "Cuéntanos tu proyecto"
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio/72",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/servicio"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=72"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 71,
+      "date": "2026-07-31T00:38:33",
+      "date_gmt": "2026-07-31T00:38:33",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/?post_type=servicio&#038;p=71"
+      },
+      "modified": "2026-07-31T02:48:55",
+      "modified_gmt": "2026-07-31T02:48:55",
+      "slug": "fotografia-profesional",
+      "status": "publish",
+      "type": "servicio",
+      "link": "https://cms.ebanavision.com/servicio/fotografia-profesional/",
+      "title": {
+        "rendered": "Fotografía Profesional"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-71",
+        "servicio",
+        "type-servicio",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "descripcion": "Sesiones fotográficas de alto impacto para marcas, productos y eventos, con dirección de arte propia.",
+        "categoria": "Estudio",
+        "icono": "camera",
+        "detalles": "Fotografía de producto y catálogo\nRetrato corporativo y editorial\nCobertura de eventos\nEdición y retoque profesional",
+        "texto_cta": "Reserva tu sesión hoy"
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio/71",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/servicio"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/servicio"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=71"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": 104,
+      "date": "2026-07-31T08:32:28",
+      "date_gmt": "2026-07-31T08:32:28",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/proyecto/documental-raices/"
+      },
+      "modified": "2026-07-31T08:32:28",
+      "modified_gmt": "2026-07-31T08:32:28",
+      "slug": "documental-raices",
+      "status": "publish",
+      "type": "proyecto",
+      "link": "https://cms.ebanavision.com/proyecto/documental-raices/",
+      "title": {
+        "rendered": "Documental &#8216;Raíces&#8217;"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-104",
+        "proyecto",
+        "type-proyecto",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "cliente": "Cultura Viva",
+        "categoria": "Productora",
+        "video_url": ""
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto/104",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/proyecto"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=104"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 102,
+      "date": "2026-07-31T08:32:24",
+      "date_gmt": "2026-07-31T08:32:24",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/proyecto/sesion-editorial-lumina/"
+      },
+      "modified": "2026-07-31T08:32:24",
+      "modified_gmt": "2026-07-31T08:32:24",
+      "slug": "sesion-editorial-lumina",
+      "status": "publish",
+      "type": "proyecto",
+      "link": "https://cms.ebanavision.com/proyecto/sesion-editorial-lumina/",
+      "title": {
+        "rendered": "Sesión Editorial &#8216;Lumina&#8217;"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-102",
+        "proyecto",
+        "type-proyecto",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "cliente": "Vogue Creative",
+        "categoria": "Fotografía",
+        "video_url": ""
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto/102",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/proyecto"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=102"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 100,
+      "date": "2026-07-31T08:32:18",
+      "date_gmt": "2026-07-31T08:32:18",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/proyecto/escenografia-evento-corporativo/"
+      },
+      "modified": "2026-07-31T08:32:18",
+      "modified_gmt": "2026-07-31T08:32:18",
+      "slug": "escenografia-evento-corporativo",
+      "status": "publish",
+      "type": "proyecto",
+      "link": "https://cms.ebanavision.com/proyecto/escenografia-evento-corporativo/",
+      "title": {
+        "rendered": "Escenografía Evento Corporativo"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-100",
+        "proyecto",
+        "type-proyecto",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "cliente": "Congreso Nacional",
+        "categoria": "Decoración",
+        "video_url": ""
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto/100",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/proyecto"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=100"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "date": "2026-07-31T08:32:12",
+      "date_gmt": "2026-07-31T08:32:12",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/proyecto/banners-evento-internacional/"
+      },
+      "modified": "2026-07-31T08:32:12",
+      "modified_gmt": "2026-07-31T08:32:12",
+      "slug": "banners-evento-internacional",
+      "status": "publish",
+      "type": "proyecto",
+      "link": "https://cms.ebanavision.com/proyecto/banners-evento-internacional/",
+      "title": {
+        "rendered": "Banners Evento Internacional"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-98",
+        "proyecto",
+        "type-proyecto",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "cliente": "Cumbre Bilateral",
+        "categoria": "Imprenta",
+        "video_url": ""
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto/98",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/proyecto"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=98"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "date": "2026-07-31T08:32:08",
+      "date_gmt": "2026-07-31T08:32:08",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/proyecto/vinilado-flota-corporativa/"
+      },
+      "modified": "2026-07-31T08:32:08",
+      "modified_gmt": "2026-07-31T08:32:08",
+      "slug": "vinilado-flota-corporativa",
+      "status": "publish",
+      "type": "proyecto",
+      "link": "https://cms.ebanavision.com/proyecto/vinilado-flota-corporativa/",
+      "title": {
+        "rendered": "Vinilado Flota Corporativa"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-96",
+        "proyecto",
+        "type-proyecto",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "cliente": "Logística Ecuatoguineana",
+        "categoria": "Imprenta",
+        "video_url": ""
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto/96",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/proyecto"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=96"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "date": "2026-07-31T08:32:04",
+      "date_gmt": "2026-07-31T08:32:04",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/proyecto/invitaciones-gala-real/"
+      },
+      "modified": "2026-07-31T08:32:04",
+      "modified_gmt": "2026-07-31T08:32:04",
+      "slug": "invitaciones-gala-real",
+      "status": "publish",
+      "type": "proyecto",
+      "link": "https://cms.ebanavision.com/proyecto/invitaciones-gala-real/",
+      "title": {
+        "rendered": "Invitaciones Gala Real"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-94",
+        "proyecto",
+        "type-proyecto",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "cliente": "Delegación Eventos",
+        "categoria": "Imprenta",
+        "video_url": ""
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto/94",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/proyecto"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=94"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "date": "2026-07-31T08:32:00",
+      "date_gmt": "2026-07-31T08:32:00",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/proyecto/spot-televisivo-momentum/"
+      },
+      "modified": "2026-07-31T08:32:00",
+      "modified_gmt": "2026-07-31T08:32:00",
+      "slug": "spot-televisivo-momentum",
+      "status": "publish",
+      "type": "proyecto",
+      "link": "https://cms.ebanavision.com/proyecto/spot-televisivo-momentum/",
+      "title": {
+        "rendered": "Spot Televisivo &#8216;Momentum&#8217;"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-92",
+        "proyecto",
+        "type-proyecto",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "cliente": "Momentum Auto",
+        "categoria": "Productora",
+        "video_url": ""
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto/92",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/proyecto"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=92"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 90,
+      "date": "2026-07-31T08:31:56",
+      "date_gmt": "2026-07-31T08:31:56",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/proyecto/branding-institucional/"
+      },
+      "modified": "2026-07-31T08:31:56",
+      "modified_gmt": "2026-07-31T08:31:56",
+      "slug": "branding-institucional",
+      "status": "publish",
+      "type": "proyecto",
+      "link": "https://cms.ebanavision.com/proyecto/branding-institucional/",
+      "title": {
+        "rendered": "Branding Institucional"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-90",
+        "proyecto",
+        "type-proyecto",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "cliente": "EduTech",
+        "categoria": "Diseño",
+        "video_url": ""
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto/90",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/proyecto"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=90"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "date": "2026-07-31T08:31:52",
+      "date_gmt": "2026-07-31T08:31:52",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/proyecto/campana-visual-horizon/"
+      },
+      "modified": "2026-07-31T08:31:52",
+      "modified_gmt": "2026-07-31T08:31:52",
+      "slug": "campana-visual-horizon",
+      "status": "publish",
+      "type": "proyecto",
+      "link": "https://cms.ebanavision.com/proyecto/campana-visual-horizon/",
+      "title": {
+        "rendered": "Campaña Visual &#8216;Horizon&#8217;"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 87,
+      "template": "",
+      "class_list": [
+        "post-88",
+        "proyecto",
+        "type-proyecto",
+        "status-publish",
+        "has-post-thumbnail",
+        "hentry"
+      ],
+      "acf": {
+        "cliente": "Horizon Group",
+        "categoria": "Fotografía",
+        "video_url": ""
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto/88",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/proyecto"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/proyecto"
+          }
+        ],
+        "wp:featuredmedia": [
+          {
+            "embeddable": true,
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media/87"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=88"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      },
+      "_embedded": {
+        "wp:featuredmedia": [
+          {
+            "id": 87,
+            "date": "2026-07-31T08:31:51",
+            "slug": "campa-a-visual-horizon",
+            "type": "attachment",
+            "link": "https://cms.ebanavision.com/campa-a-visual-horizon/",
+            "title": {
+              "rendered": "campa-a-visual-horizon-"
+            },
+            "author": 1,
+            "featured_media": 0,
+            "acf": [],
+            "caption": {
+              "rendered": ""
+            },
+            "alt_text": "",
+            "media_type": "image",
+            "mime_type": "image/jpeg",
+            "media_details": {
+              "width": 1000,
+              "height": 667,
+              "file": "2026/07/campa-a-visual-horizon-.jpg",
+              "filesize": 78125,
+              "sizes": {
+                "medium": {
+                  "file": "campa-a-visual-horizon--300x200.jpg",
+                  "width": 300,
+                  "height": 200,
+                  "filesize": 12948,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://cms.ebanavision.com/wp-content/uploads/2026/07/campa-a-visual-horizon--300x200.jpg"
+                },
+                "thumbnail": {
+                  "file": "campa-a-visual-horizon--150x150.jpg",
+                  "width": 150,
+                  "height": 150,
+                  "filesize": 7963,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://cms.ebanavision.com/wp-content/uploads/2026/07/campa-a-visual-horizon--150x150.jpg"
+                },
+                "medium_large": {
+                  "file": "campa-a-visual-horizon--768x512.jpg",
+                  "width": 768,
+                  "height": 512,
+                  "filesize": 43285,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://cms.ebanavision.com/wp-content/uploads/2026/07/campa-a-visual-horizon--768x512.jpg"
+                },
+                "full": {
+                  "file": "campa-a-visual-horizon-.jpg",
+                  "width": 1000,
+                  "height": 667,
+                  "mime_type": "image/jpeg",
+                  "source_url": "https://cms.ebanavision.com/wp-content/uploads/2026/07/campa-a-visual-horizon-.jpg"
+                }
+              },
+              "image_meta": {
+                "aperture": "0",
+                "credit": "",
+                "camera": "",
+                "caption": "",
+                "created_timestamp": "0",
+                "copyright": "",
+                "focal_length": "0",
+                "iso": "0",
+                "shutter_speed": "0",
+                "title": "",
+                "orientation": "0",
+                "keywords": [],
+                "alt": ""
+              }
+            },
+            "source_url": "https://cms.ebanavision.com/wp-content/uploads/2026/07/campa-a-visual-horizon-.jpg",
+            "_links": {
+              "self": [
+                {
+                  "href": "https://cms.ebanavision.com/wp-json/wp/v2/media/87",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://cms.ebanavision.com/wp-json/wp/v2/media"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/attachment"
+                }
+              ],
+              "author": [
+                {
+                  "embeddable": true,
+                  "href": "https://cms.ebanavision.com/wp-json/wp/v2/users/1"
+                }
+              ],
+              "replies": [
+                {
+                  "embeddable": true,
+                  "href": "https://cms.ebanavision.com/wp-json/wp/v2/comments?post=87"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "brands": [
+    {
+      "id": 115,
+      "date": "2026-07-31T08:51:47",
+      "date_gmt": "2026-07-31T08:51:47",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/marca/brand-04/"
+      },
+      "modified": "2026-07-31T08:51:47",
+      "modified_gmt": "2026-07-31T08:51:47",
+      "slug": "brand-04",
+      "status": "publish",
+      "type": "marca",
+      "link": "https://cms.ebanavision.com/marca/brand-04/",
+      "title": {
+        "rendered": "Brand 04"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-115",
+        "marca",
+        "type-marca",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca/115",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/marca"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=115"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 114,
+      "date": "2026-07-31T08:51:46",
+      "date_gmt": "2026-07-31T08:51:46",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/marca/brand-01/"
+      },
+      "modified": "2026-07-31T08:51:46",
+      "modified_gmt": "2026-07-31T08:51:46",
+      "slug": "brand-01",
+      "status": "publish",
+      "type": "marca",
+      "link": "https://cms.ebanavision.com/marca/brand-01/",
+      "title": {
+        "rendered": "Brand 01"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-114",
+        "marca",
+        "type-marca",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca/114",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/marca"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=114"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 113,
+      "date": "2026-07-31T08:41:13",
+      "date_gmt": "2026-07-31T08:41:13",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/marca/brand-06/"
+      },
+      "modified": "2026-07-31T08:41:13",
+      "modified_gmt": "2026-07-31T08:41:13",
+      "slug": "brand-06",
+      "status": "publish",
+      "type": "marca",
+      "link": "https://cms.ebanavision.com/marca/brand-06/",
+      "title": {
+        "rendered": "Brand 06"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-113",
+        "marca",
+        "type-marca",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca/113",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/marca"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=113"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 111,
+      "date": "2026-07-31T08:41:11",
+      "date_gmt": "2026-07-31T08:41:11",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/marca/brand-05/"
+      },
+      "modified": "2026-07-31T08:41:11",
+      "modified_gmt": "2026-07-31T08:41:11",
+      "slug": "brand-05",
+      "status": "publish",
+      "type": "marca",
+      "link": "https://cms.ebanavision.com/marca/brand-05/",
+      "title": {
+        "rendered": "Brand 05"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-111",
+        "marca",
+        "type-marca",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca/111",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/marca"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=111"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 109,
+      "date": "2026-07-31T08:41:09",
+      "date_gmt": "2026-07-31T08:41:09",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/marca/brand-03/"
+      },
+      "modified": "2026-07-31T08:41:09",
+      "modified_gmt": "2026-07-31T08:41:09",
+      "slug": "brand-03",
+      "status": "publish",
+      "type": "marca",
+      "link": "https://cms.ebanavision.com/marca/brand-03/",
+      "title": {
+        "rendered": "Brand 03"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-109",
+        "marca",
+        "type-marca",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca/109",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/marca"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=109"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 107,
+      "date": "2026-07-31T08:41:07",
+      "date_gmt": "2026-07-31T08:41:07",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/marca/brand-02/"
+      },
+      "modified": "2026-07-31T08:41:07",
+      "modified_gmt": "2026-07-31T08:41:07",
+      "slug": "brand-02",
+      "status": "publish",
+      "type": "marca",
+      "link": "https://cms.ebanavision.com/marca/brand-02/",
+      "title": {
+        "rendered": "Brand 02"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-107",
+        "marca",
+        "type-marca",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca/107",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/marca"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/marca"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=107"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 122,
+      "date": "2026-07-31T08:55:44",
+      "date_gmt": "2026-07-31T08:55:44",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/testimonio/laura-gomez/"
+      },
+      "modified": "2026-07-31T08:55:44",
+      "modified_gmt": "2026-07-31T08:55:44",
+      "slug": "laura-gomez",
+      "status": "publish",
+      "type": "testimonio",
+      "link": "https://cms.ebanavision.com/testimonio/laura-gomez/",
+      "title": {
+        "rendered": "Laura Gómez"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-122",
+        "testimonio",
+        "type-testimonio",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "cargo": "Fundadora, Bella Vita",
+        "cita": "Atención al detalle excepcional y entrega puntual. Sin duda los recomendamos."
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/testimonio/122",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/testimonio"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/testimonio"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=122"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 120,
+      "date": "2026-07-31T08:55:39",
+      "date_gmt": "2026-07-31T08:55:39",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/testimonio/carlos-mendoza/"
+      },
+      "modified": "2026-07-31T08:55:39",
+      "modified_gmt": "2026-07-31T08:55:39",
+      "slug": "carlos-mendoza",
+      "status": "publish",
+      "type": "testimonio",
+      "link": "https://cms.ebanavision.com/testimonio/carlos-mendoza/",
+      "title": {
+        "rendered": "Carlos Mendoza"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-120",
+        "testimonio",
+        "type-testimonio",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "cargo": "Director de Marketing, Grupo Andino",
+        "cita": "El equipo entendió nuestra visión desde el primer día. El resultado superó nuestras expectativas."
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/testimonio/120",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/testimonio"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/testimonio"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=120"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 118,
+      "date": "2026-07-31T08:55:35",
+      "date_gmt": "2026-07-31T08:55:35",
+      "guid": {
+        "rendered": "https://cms.ebanavision.com/testimonio/ana-perez/"
+      },
+      "modified": "2026-07-31T08:55:35",
+      "modified_gmt": "2026-07-31T08:55:35",
+      "slug": "ana-perez",
+      "status": "publish",
+      "type": "testimonio",
+      "link": "https://cms.ebanavision.com/testimonio/ana-perez/",
+      "title": {
+        "rendered": "Ana Pérez"
+      },
+      "content": {
+        "rendered": "",
+        "protected": false
+      },
+      "featured_media": 0,
+      "template": "",
+      "class_list": [
+        "post-118",
+        "testimonio",
+        "type-testimonio",
+        "status-publish",
+        "hentry"
+      ],
+      "acf": {
+        "cargo": "CEO, TechSolution",
+        "cita": "Trabajar con Ebana Visión transformó por completo la forma en que comunicamos nuestra marca. Profesionalismo y creatividad en cada entrega."
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/testimonio/118",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/testimonio"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/testimonio"
+          }
+        ],
+        "wp:attachment": [
+          {
+            "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=118"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "id": 69,
+    "date": "2026-07-31T00:27:48",
+    "date_gmt": "2026-07-31T00:27:48",
+    "guid": {
+      "rendered": "https://cms.ebanavision.com/?post_type=config_global&#038;p=69"
+    },
+    "modified": "2026-09-05T08:11:24",
+    "modified_gmt": "2026-09-05T08:11:24",
+    "slug": "configuracion",
+    "status": "publish",
+    "type": "config_global",
+    "link": "https://cms.ebanavision.com/config_global/configuracion/",
+    "title": {
+      "rendered": "Configuración"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "template": "",
+    "class_list": [
+      "post-69",
+      "config_global",
+      "type-config_global",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": {
+      "hero_titulo_1": "Capturamos",
+      "hero_titulo_2": "lo que otros",
+      "hero_titulo_3": "no ven.",
+      "hero_video_youtube_id": "jwiV9gbjEi8",
+      "logo_url": 125,
+      "whatsapp_numero": "240555504472",
+      "telefono_alternativo": "",
+      "email_contacto": "info@ebanavision.com",
+      "emailjs_template_id": "template_8z2cs8o",
+      "emailjs_public_key": "ZO_CE9zi73ZSUEMfNOGCp",
+      "url_recurso_gratis": "",
+      "hero_descripcion": "Detrás de cada marca hay una historia. Detrás de cada historia, una emoción. En Ebana Visión, la transformamos en arte visual que deleita y vende.",
+      "emailjs_service_id": "service_0wuh5sa",
+      "direccion": "",
+      "instagram_url": "",
+      "facebook_url": "",
+      "tiktok_url": "",
+      "youtube_url": "",
+      "meta_descripcion": ""
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://cms.ebanavision.com/wp-json/wp/v2/config_global/69",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://cms.ebanavision.com/wp-json/wp/v2/config_global"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://cms.ebanavision.com/wp-json/wp/v2/types/config_global"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://cms.ebanavision.com/wp-json/wp/v2/media?parent=69"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+}

@@ -9,6 +9,7 @@ const STATUS_OPTIONS: LeadStatus[] = ["NUEVO", "CONTACTADO"];
 export default function LeadsTable({ leads }: { leads: Lead[] }) {
   const [isPending, startTransition] = useTransition();
   const [pendingId, setPendingId] = useState<number | null>(null);
+  const [confirmingId, setConfirmingId] = useState<number | null>(null);
 
   if (leads.length === 0) {
     return <p className="text-zinc-500">No hay leads registrados aún.</p>;
@@ -60,18 +61,35 @@ export default function LeadsTable({ leads }: { leads: Lead[] }) {
                 </select>
               </td>
               <td className="px-4 py-3">
-                <button
-                  onClick={() => {
-                    if (!confirm("¿Eliminar este lead?")) return;
-                    setPendingId(lead.id);
-                    startTransition(() => {
-                      deleteLead(lead.id);
-                    });
-                  }}
-                  className="text-red-500 hover:text-red-400"
-                >
-                  Eliminar
-                </button>
+                {confirmingId === lead.id ? (
+                  <span className="inline-flex items-center gap-2">
+                    <button
+                      onClick={() => {
+                        setPendingId(lead.id);
+                        setConfirmingId(null);
+                        startTransition(() => {
+                          deleteLead(lead.id);
+                        });
+                      }}
+                      className="font-medium text-red-500 hover:text-red-400"
+                    >
+                      Confirmar
+                    </button>
+                    <button
+                      onClick={() => setConfirmingId(null)}
+                      className="text-zinc-500 hover:text-zinc-300"
+                    >
+                      Cancelar
+                    </button>
+                  </span>
+                ) : (
+                  <button
+                    onClick={() => setConfirmingId(lead.id)}
+                    className="text-red-500 hover:text-red-400"
+                  >
+                    Eliminar
+                  </button>
+                )}
               </td>
             </tr>
           ))}

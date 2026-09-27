@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { db } from "@/lib/db";
+import DeleteButton from "@/components/admin/DeleteButton";
 import { deleteBrand } from "./actions";
 
 export default async function BrandsListPage() {
@@ -38,17 +39,7 @@ export default async function BrandsListPage() {
                   >
                     Editar
                   </Link>
-                  <form
-                    action={async () => {
-                      "use server";
-                      await deleteBrand(brand.id);
-                    }}
-                    className="inline"
-                  >
-                    <button type="submit" className="text-red-500 hover:text-red-400">
-                      Eliminar
-                    </button>
-                  </form>
+                  <DeleteButton action={deleteBrand.bind(null, brand.id)} />
                 </td>
               </tr>
             ))}

@@ -1,5 +1,12 @@
-import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
+import { getEnabledSections } from "@/lib/content";
+import { SECTION_REGISTRY } from "@/components/sections/registry";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/sections/Hero";
+import Contact from "@/components/sections/Contact";
+import Footer from "@/components/layout/Footer";
+import FloatingContact from "@/components/layout/FloatingContact";
+import BackToTop from "@/components/layout/BackToTop";
 
 export default async function HomePage({
   params,
@@ -9,14 +16,23 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <HomeContent />;
-}
+  const sections = await getEnabledSections();
 
-function HomeContent() {
-  const t = useTranslations("common");
   return (
-    <main className="flex flex-1 items-center justify-center bg-zinc-950 text-white">
-      <p className="text-lg">{t("placeholder")}</p>
-    </main>
+    <>
+      <Navbar />
+      <main className="flex-1 pt-16">
+        <Hero />
+        {sections.map((section) => {
+          const SectionComponent = SECTION_REGISTRY[section.key];
+          if (!SectionComponent) return null;
+          return <SectionComponent key={section.key} />;
+        })}
+        <Contact />
+      </main>
+      <Footer />
+      <FloatingContact />
+      <BackToTop />
+    </>
   );
 }

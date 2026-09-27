@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { db } from "@/lib/db";
+import DeleteButton from "@/components/admin/DeleteButton";
 import { deleteService } from "./actions";
 
 type LocalizedText = { es?: string };
@@ -46,17 +47,7 @@ export default async function ServicesListPage() {
                   >
                     Editar
                   </Link>
-                  <form
-                    action={async () => {
-                      "use server";
-                      await deleteService(service.id);
-                    }}
-                    className="inline"
-                  >
-                    <button type="submit" className="text-red-500 hover:text-red-400">
-                      Eliminar
-                    </button>
-                  </form>
+                  <DeleteButton action={deleteService.bind(null, service.id)} />
                 </td>
               </tr>
             ))}

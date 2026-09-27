@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { db } from "@/lib/db";
+import DeleteButton from "@/components/admin/DeleteButton";
 import { deleteBlogPost } from "./actions";
 
 type LocalizedText = { es?: string };
@@ -42,17 +43,7 @@ export default async function BlogListPage() {
                   >
                     Editar
                   </Link>
-                  <form
-                    action={async () => {
-                      "use server";
-                      await deleteBlogPost(post.id);
-                    }}
-                    className="inline"
-                  >
-                    <button type="submit" className="text-red-500 hover:text-red-400">
-                      Eliminar
-                    </button>
-                  </form>
+                  <DeleteButton action={deleteBlogPost.bind(null, post.id)} />
                 </td>
               </tr>
             ))}

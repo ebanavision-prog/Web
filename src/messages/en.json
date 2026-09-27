@@ -6,9 +6,110 @@
     "portfolio": "Portfolio",
     "testimonials": "Testimonials",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cta": "Start a Project"
+  },
+  "hero": {
+    "ctaServices": "Our Services",
+    "ctaPortfolio": "View Portfolio"
+  },
+  "trustMarquee": {
+    "heading": "Brands that trust us"
+  },
+  "portfolio": {
+    "heading": "Portfolio",
+    "subheading": "A look at our work",
+    "all": "All",
+    "loadMore": "Load more projects"
+  },
+  "services": {
+    "heading": "Services",
+    "subheading": "Everything you need under one roof",
+    "all": "All",
+    "detailsCta": "Learn more"
+  },
+  "process": {
+    "heading": "How we work",
+    "step1Title": "Strategic Consulting",
+    "step1Desc": "We understand your brand, audience and goals before moving a single camera.",
+    "step2Title": "Elite Production",
+    "step2Desc": "Professional crew, art direction and attention to detail in every shot.",
+    "step3Title": "Delivery & Impact",
+    "step3Desc": "Optimized content ready to drive real results."
+  },
+  "about": {
+    "heading": "About Us",
+    "quote": "We don't just capture moments. We build brands.",
+    "stat1Value": "250+",
+    "stat1Label": "Projects",
+    "stat2Value": "7+",
+    "stat2Label": "Years",
+    "stat3Value": "100%",
+    "stat3Label": "Passion",
+    "stat4Value": "24/7",
+    "stat4Label": "Support"
+  },
+  "testimonials": {
+    "heading": "Testimonials",
+    "subheading": "What our clients say"
+  },
+  "blog": {
+    "heading": "Blog",
+    "loadMore": "Load more articles",
+    "readMore": "Read article"
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "items": [
+      {
+        "question": "How long does a project take?",
+        "answer": "It depends on the scope, but most projects are delivered within 1 to 3 weeks."
+      },
+      {
+        "question": "Do you work outside Malabo?",
+        "answer": "Yes, we travel anywhere in Equatorial Guinea and also take on international projects."
+      },
+      {
+        "question": "What does a photography session include?",
+        "answer": "Pre-production, the session itself, and professional selection and editing of the best shots."
+      },
+      {
+        "question": "How do I start a project?",
+        "answer": "Reach out through the contact form or WhatsApp and we'll set up a free initial call."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contact",
+    "subheading": "Let's talk about your next project",
+    "name": "Name",
+    "email": "Email",
+    "service": "Service of interest",
+    "message": "Message",
+    "submit": "Send message",
+    "success": "Message sent! We'll get back to you soon.",
+    "error": "There was a problem sending your message. Please try again.",
+    "validationName": "Name must be at least 3 characters",
+    "validationEmail": "Enter a valid email",
+    "validationMessage": "Message must be at least 10 characters"
+  },
+  "footer": {
+    "connect": "Let's Connect",
+    "rights": "All rights reserved",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "terms": "Terms",
+    "newsletterPlaceholder": "Your email",
+    "newsletterSubmit": "Subscribe"
+  },
+  "leadMagnet": {
+    "title": "5 Pillars for an Irresistible Brand",
+    "description": "Download our free guide and discover how to elevate your visual brand.",
+    "cta": "Download PDF Guide",
+    "formCta": "I want the guide"
   },
   "common": {
+    "whatsapp": "WhatsApp",
     "placeholder": "Site under construction"
   }
 }

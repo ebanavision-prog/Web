@@ -6,9 +6,110 @@
     "portfolio": "Portfolio",
     "testimonials": "Témoignages",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contact",
+    "cta": "Démarrer un Projet"
+  },
+  "hero": {
+    "ctaServices": "Nos Services",
+    "ctaPortfolio": "Voir le Portfolio"
+  },
+  "trustMarquee": {
+    "heading": "Des marques qui nous font confiance"
+  },
+  "portfolio": {
+    "heading": "Portfolio",
+    "subheading": "Un aperçu de notre travail",
+    "all": "Tous",
+    "loadMore": "Voir plus de projets"
+  },
+  "services": {
+    "heading": "Services",
+    "subheading": "Tout ce dont vous avez besoin sous un même toit",
+    "all": "Tous",
+    "detailsCta": "En savoir plus"
+  },
+  "process": {
+    "heading": "Comment nous travaillons",
+    "step1Title": "Conseil Stratégique",
+    "step1Desc": "Nous comprenons votre marque, votre public et vos objectifs avant de bouger une seule caméra.",
+    "step2Title": "Production d'Élite",
+    "step2Desc": "Équipe professionnelle, direction artistique et souci du détail à chaque prise.",
+    "step3Title": "Livraison et Impact",
+    "step3Desc": "Contenu optimisé prêt à générer de vrais résultats."
+  },
+  "about": {
+    "heading": "À propos",
+    "quote": "Nous ne capturons pas seulement des moments. Nous construisons des marques.",
+    "stat1Value": "250+",
+    "stat1Label": "Projets",
+    "stat2Value": "7+",
+    "stat2Label": "Ans",
+    "stat3Value": "100%",
+    "stat3Label": "Passion",
+    "stat4Value": "24/7",
+    "stat4Label": "Support"
+  },
+  "testimonials": {
+    "heading": "Témoignages",
+    "subheading": "Ce que disent nos clients"
+  },
+  "blog": {
+    "heading": "Blog",
+    "loadMore": "Voir plus d'articles",
+    "readMore": "Lire l'article"
+  },
+  "faq": {
+    "heading": "Questions fréquentes",
+    "items": [
+      {
+        "question": "Combien de temps prend un projet ?",
+        "answer": "Cela dépend de l'ampleur, mais la plupart des projets sont livrés en 1 à 3 semaines."
+      },
+      {
+        "question": "Travaillez-vous en dehors de Malabo ?",
+        "answer": "Oui, nous nous déplaçons partout en Guinée Équatoriale et acceptons aussi des projets internationaux."
+      },
+      {
+        "question": "Que comprend une séance photo ?",
+        "answer": "La préproduction, la séance elle-même, ainsi que la sélection et l'édition professionnelle des meilleures prises."
+      },
+      {
+        "question": "Comment démarrer un projet ?",
+        "answer": "Contactez-nous via le formulaire ou WhatsApp et nous organiserons un premier appel gratuit."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contact",
+    "subheading": "Parlons de votre prochain projet",
+    "name": "Nom",
+    "email": "Email",
+    "service": "Service souhaité",
+    "message": "Message",
+    "submit": "Envoyer le message",
+    "success": "Message envoyé ! Nous vous répondrons bientôt.",
+    "error": "Un problème est survenu lors de l'envoi. Veuillez réessayer.",
+    "validationName": "Le nom doit contenir au moins 3 caractères",
+    "validationEmail": "Entrez un email valide",
+    "validationMessage": "Le message doit contenir au moins 10 caractères"
+  },
+  "footer": {
+    "connect": "Connectons-nous",
+    "rights": "Tous droits réservés",
+    "privacy": "Confidentialité",
+    "cookies": "Cookies",
+    "terms": "Conditions",
+    "newsletterPlaceholder": "Votre email",
+    "newsletterSubmit": "S'abonner"
+  },
+  "leadMagnet": {
+    "title": "5 Piliers pour une Marque Irrésistible",
+    "description": "Téléchargez notre guide gratuit et découvrez comment sublimer votre image de marque.",
+    "cta": "Télécharger le Guide PDF",
+    "formCta": "Je veux le guide"
   },
   "common": {
+    "whatsapp": "WhatsApp",
     "placeholder": "Site en construction"
   }
 }
