@@ -204,28 +204,28 @@ async function main() {
   if (config) {
     const acf = config.acf;
     const logoUrl = await resolveMediaUrl(acf.logo_url);
+    const settingsData = {
+      whatsappNumber: acf.whatsapp_numero ?? null,
+      alternativePhone: acf.telefono_alternativo ?? null,
+      contactEmail: acf.email_contacto ?? null,
+      address: acf.direccion ?? null,
+      instagramUrl: acf.instagram_url ?? null,
+      facebookUrl: acf.facebook_url ?? null,
+      tiktokUrl: acf.tiktok_url ?? null,
+      youtubeUrl: acf.youtube_url ?? null,
+      heroVideoYoutubeId: acf.hero_video_youtube_id ?? null,
+      logoUrl: logoUrl ?? null,
+      freeResourceUrl: acf.url_recurso_gratis ?? null,
+      metaDescription: { es: decodeHtmlEntities(acf.meta_descripcion ?? ""), en: "", fr: "" },
+      heroTitle1: { es: decodeHtmlEntities(acf.hero_titulo_1 ?? ""), en: "", fr: "" },
+      heroTitle2: { es: decodeHtmlEntities(acf.hero_titulo_2 ?? ""), en: "", fr: "" },
+      heroTitle3: { es: decodeHtmlEntities(acf.hero_titulo_3 ?? ""), en: "", fr: "" },
+      heroDescription: { es: decodeHtmlEntities(acf.hero_descripcion ?? ""), en: "", fr: "" },
+    };
     await db.siteSetting.upsert({
       where: { id: 1 },
-      update: {},
-      create: {
-        id: 1,
-        whatsappNumber: acf.whatsapp_numero ?? null,
-        alternativePhone: acf.telefono_alternativo ?? null,
-        contactEmail: acf.email_contacto ?? null,
-        address: acf.direccion ?? null,
-        instagramUrl: acf.instagram_url ?? null,
-        facebookUrl: acf.facebook_url ?? null,
-        tiktokUrl: acf.tiktok_url ?? null,
-        youtubeUrl: acf.youtube_url ?? null,
-        heroVideoYoutubeId: acf.hero_video_youtube_id ?? null,
-        logoUrl: logoUrl ?? null,
-        freeResourceUrl: acf.url_recurso_gratis ?? null,
-        metaDescription: { es: acf.meta_descripcion ?? "", en: "", fr: "" },
-        heroTitle1: { es: acf.hero_titulo_1 ?? "", en: "", fr: "" },
-        heroTitle2: { es: acf.hero_titulo_2 ?? "", en: "", fr: "" },
-        heroTitle3: { es: acf.hero_titulo_3 ?? "", en: "", fr: "" },
-        heroDescription: { es: acf.hero_descripcion ?? "", en: "", fr: "" },
-      },
+      update: settingsData,
+      create: { id: 1, ...settingsData },
     });
     console.log("[migrate] Site settings migrated.");
   }

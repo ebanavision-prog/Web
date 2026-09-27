@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ebana Visión — sitio web
 
-## Getting Started
+Reconstrucción del sitio de Ebana Visión (ebanavision.com) en Next.js, con CMS propio
+integrado (panel `/admin`), multi-idioma (ES/EN/FR), secciones activables desde el
+admin, y base de datos MySQL vía Prisma.
 
-First, run the development server:
+## Desarrollo local
 
 ```bash
+npm install
+cp .env.example .env   # completar DATABASE_URL, AUTH_SECRET, etc.
+npx prisma migrate dev
+SEED_ADMIN_PASSWORD="tu-contraseña" npx tsx prisma/seed.ts
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sitio público: [http://localhost:3000/es](http://localhost:3000/es)
+Panel de admin: [http://localhost:3000/admin/login](http://localhost:3000/admin/login)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Migrar contenido desde WordPress
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run migrate:wp
+```
 
-## Learn More
+Trae servicios, proyectos, marcas, testimonios y ajustes desde `cms.ebanavision.com`.
+Ver comentarios en `scripts/migrate-from-wordpress.ts`.
 
-To learn more about Next.js, take a look at the following resources:
+## Despliegue a producción
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ver [`DEPLOYMENT.md`](./DEPLOYMENT.md) — despliegue manual a cPanel (Node.js Selector),
+sin CI/CD automático.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Stack
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · Prisma + MySQL · next-intl ·
+sesiones propias (jose + bcryptjs) · sharp para compresión de imágenes.
