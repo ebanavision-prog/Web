@@ -14,7 +14,7 @@ export default async function Blog() {
   return (
     <section id="blog" className="bg-white py-24 dark:bg-zinc-950">
       <div className="mx-auto max-w-6xl px-4">
-        <h2 className="mb-12 text-center font-serif text-3xl font-bold italic text-zinc-900 md:text-4xl dark:text-white">
+        <h2 className="mb-12 text-center heading text-3xl text-zinc-900 md:text-4xl dark:text-white">
           {t("heading")}
         </h2>
 

@@ -36,7 +36,7 @@ export default function FooterClient({
       <div className="mx-auto max-w-6xl px-4 py-16">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <h3 className="mb-3 font-serif text-xl font-bold italic text-white">
+            <h3 className="mb-3 heading text-xl text-white">
               Ebana Visión
             </h3>
             <p className="text-sm">Producción audiovisual, diseño e impresión en Malabo.</p>

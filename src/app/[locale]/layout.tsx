@@ -82,9 +82,19 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
 
+  const settings = await getSiteSettings();
+  const fontPairing = settings?.fontPairing === "bold" ? "bold" : "editorial";
+  const headingFontVar = fontPairing === "bold" ? "var(--font-poppins)" : "var(--font-playfair)";
+
   return (
     <NextIntlClientProvider>
-      {children}
+      <div
+        data-font-pairing={fontPairing}
+        style={{ "--font-heading": headingFontVar } as React.CSSProperties}
+        className="flex min-h-full flex-1 flex-col"
+      >
+        {children}
+      </div>
     </NextIntlClientProvider>
   );
 }

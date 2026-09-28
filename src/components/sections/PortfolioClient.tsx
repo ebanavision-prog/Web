@@ -43,7 +43,7 @@ export default function PortfolioClient({
     <section id="portafolio" className="bg-zinc-50 py-24 dark:bg-zinc-900">
       <div className="mx-auto max-w-6xl px-4">
         <div className="mb-10 text-center">
-          <h2 className="mb-2 font-serif text-3xl font-bold italic text-zinc-900 md:text-4xl dark:text-white">
+          <h2 className="mb-2 heading text-3xl text-zinc-900 md:text-4xl dark:text-white">
             {t("heading")}
           </h2>
           <p className="text-zinc-500 dark:text-zinc-400">{t("subheading")}</p>
@@ -97,7 +97,7 @@ export default function PortfolioClient({
                 <p className="text-xs uppercase tracking-wide text-brand-red">
                   {categoryLabel(project.category, locale)}
                 </p>
-                <h3 className="font-serif text-lg font-bold italic text-white">
+                <h3 className="heading text-lg text-white">
                   {pickText(project.title, locale)}
                 </h3>
               </div>
@@ -154,7 +154,7 @@ export default function PortfolioClient({
             </div>
             <div className="flex items-start justify-between p-6">
               <div>
-                <h3 className="font-serif text-xl font-bold italic text-zinc-900 dark:text-white">
+                <h3 className="heading text-xl text-zinc-900 dark:text-white">
                   {pickText(selected.title, locale)}
                 </h3>
                 {selected.client && (

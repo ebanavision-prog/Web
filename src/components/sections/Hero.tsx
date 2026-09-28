@@ -20,7 +20,7 @@ export default async function Hero() {
     <section id="inicio" className="bg-white pb-16 pt-32 dark:bg-zinc-950">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 lg:grid-cols-2">
         <div>
-          <h1 className="mb-6 font-serif text-4xl font-bold italic leading-tight text-zinc-900 md:text-6xl dark:text-white">
+          <h1 className="mb-6 heading text-4xl leading-tight text-zinc-900 md:text-6xl dark:text-white">
             {title1}
             <br />
             <span className="text-brand-red">{title2}</span>

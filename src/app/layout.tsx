@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Playfair_Display, Poppins } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,11 +15,18 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["800", "900"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
       lang="es"
-      className={`${inter.variable} ${playfair.variable} h-full antialiased`}
+      className={`${inter.variable} ${playfair.variable} ${poppins.variable} h-full antialiased`}
       suppressHydrationWarning
     >
       <head>

@@ -15,7 +15,7 @@ export default async function Testimonials() {
     <section id="testimonios" className="bg-zinc-50 py-24 dark:bg-zinc-900">
       <div className="mx-auto max-w-6xl px-4">
         <div className="mb-12 text-center">
-          <h2 className="mb-2 font-serif text-3xl font-bold italic text-zinc-900 md:text-4xl dark:text-white">
+          <h2 className="mb-2 heading text-3xl text-zinc-900 md:text-4xl dark:text-white">
             {t("heading")}
           </h2>
           <p className="text-zinc-500 dark:text-zinc-400">{t("subheading")}</p>

@@ -11,7 +11,7 @@ export default function FAQSection() {
 
   return (
     <div className="rounded-[2rem] border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900 sm:p-8">
-      <h2 className="mb-6 font-serif text-2xl font-bold italic text-zinc-900 dark:text-white">
+      <h2 className="mb-6 heading text-2xl text-zinc-900 dark:text-white">
         {t("heading")}
       </h2>
 

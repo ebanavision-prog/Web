@@ -123,6 +123,7 @@ model SiteSetting {
   heroVideoYoutubeId String?
   logoUrl            String?
   freeResourceUrl    String?
+  fontPairing        String   @default("bold")
   updatedAt          DateTime @updatedAt
 }
 

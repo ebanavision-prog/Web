@@ -25,7 +25,7 @@ export default function ServicesClient({ services }: { services: Service[] }) {
     <section id="servicios" className="bg-white py-24 dark:bg-zinc-950">
       <div className="mx-auto max-w-6xl px-4">
         <div className="mb-10 text-center">
-          <h2 className="mb-2 font-serif text-3xl font-bold italic text-zinc-900 md:text-4xl dark:text-white">
+          <h2 className="mb-2 heading text-3xl text-zinc-900 md:text-4xl dark:text-white">
             {t("heading")}
           </h2>
           <p className="text-zinc-500 dark:text-zinc-400">{t("subheading")}</p>
@@ -89,7 +89,7 @@ export default function ServicesClient({ services }: { services: Service[] }) {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="mb-4 flex items-start justify-between">
-              <h3 className="font-serif text-2xl font-bold italic text-zinc-900 dark:text-white">
+              <h3 className="heading text-2xl text-zinc-900 dark:text-white">
                 {pickText(selected.title, locale)}
               </h3>
               <button onClick={() => setSelected(null)} aria-label="Cerrar">

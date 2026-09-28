@@ -20,6 +20,7 @@ export async function updateSettings(formData: FormData) {
     heroVideoYoutubeId: String(formData.get("heroVideoYoutubeId") ?? "") || null,
     logoUrl: String(formData.get("logoUrl") ?? "") || null,
     freeResourceUrl: String(formData.get("freeResourceUrl") ?? "") || null,
+    fontPairing: String(formData.get("fontPairing") ?? "bold") === "editorial" ? "editorial" : "bold",
     metaDescription: localizedField(formData, "metaDescription"),
     heroTitle1: localizedField(formData, "heroTitle1"),
     heroTitle2: localizedField(formData, "heroTitle2"),

@@ -49,6 +49,19 @@ export default async function SettingsPage() {
 
         <ImageUploadField name="logoUrl" label="Logo" defaultValue={settings?.logoUrl} />
 
+        <h2 className="mb-3 mt-8 text-lg font-medium text-zinc-300">Apariencia</h2>
+        <div className="mb-5">
+          <label className="mb-1 block text-sm text-zinc-400">Tipografía de títulos</label>
+          <select
+            name="fontPairing"
+            defaultValue={settings?.fontPairing ?? "bold"}
+            className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2 text-white"
+          >
+            <option value="bold">Bold (a juego con el logo)</option>
+            <option value="editorial">Editorial (serif elegante)</option>
+          </select>
+        </div>
+
         <h2 className="mb-3 mt-8 text-lg font-medium text-zinc-300">Contacto</h2>
         {[
           ["whatsappNumber", "WhatsApp (solo dígitos con código de país)"],

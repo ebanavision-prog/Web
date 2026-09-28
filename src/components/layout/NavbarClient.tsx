@@ -36,7 +36,7 @@ export default function NavbarClient({ logoUrl }: { logoUrl: string | null }) {
               className="h-14 w-auto object-contain"
             />
           ) : (
-            <span className="font-serif text-lg font-bold italic text-zinc-900 dark:text-white">
+            <span className="heading text-lg text-zinc-900 dark:text-white">
               Ebana Visión
             </span>
           )}

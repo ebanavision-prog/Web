@@ -14,7 +14,7 @@ export default function ProjectsCTA({ freeResourceUrl }: { freeResourceUrl: stri
   if (submitted) {
     return (
       <div className="rounded-[2.5rem] bg-zinc-900 p-10 text-center text-white">
-        <h3 className="mb-4 font-serif text-2xl font-bold italic">{t("title")}</h3>
+        <h3 className="mb-4 heading text-2xl">{t("title")}</h3>
         <a
           href={freeResourceUrl}
           target="_blank"
@@ -29,7 +29,7 @@ export default function ProjectsCTA({ freeResourceUrl }: { freeResourceUrl: stri
 
   return (
     <div className="rounded-[2.5rem] bg-zinc-900 p-10 text-white">
-      <h3 className="mb-2 font-serif text-2xl font-bold italic">{t("title")}</h3>
+      <h3 className="mb-2 heading text-2xl">{t("title")}</h3>
       <p className="mb-6 text-zinc-400">{t("description")}</p>
       <form
         action={(formData) => {

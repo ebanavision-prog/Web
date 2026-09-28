@@ -24,7 +24,7 @@ export default async function NotFound() {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-950 px-4 text-center text-white">
-      <p className="mb-2 font-serif text-6xl font-bold italic text-brand-red">404</p>
+      <p className="mb-2 heading text-6xl text-brand-red">404</p>
       <h1 className="mb-2 text-2xl font-semibold">{t.title}</h1>
       <p className="mb-6 text-zinc-400">{t.body}</p>
       <Link href="/" className="rounded-full bg-brand-red px-6 py-3 font-medium">

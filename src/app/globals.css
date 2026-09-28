@@ -3,17 +3,30 @@
 @theme {
   --color-brand-red: #cc0000;
   --font-sans: var(--font-inter);
-  --font-serif: var(--font-playfair);
 }
 
 @variant dark (&:where(.dark, .dark *));
 
 :root {
   color-scheme: light dark;
+  --font-heading: var(--font-playfair);
 }
 
 body {
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Heading style: two admin-selectable pairings (see SiteSetting.fontPairing) */
+.heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: italic;
+}
+
+[data-font-pairing="bold"] .heading {
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: -0.02em;
 }
 
 @keyframes marquee {

@@ -13,7 +13,7 @@ export default function About() {
   return (
     <section id="nosotros" className="bg-white py-24 dark:bg-zinc-950">
       <div className="mx-auto max-w-4xl px-4 text-center">
-        <h2 className="mb-6 font-serif text-3xl font-bold italic text-zinc-900 md:text-4xl dark:text-white">
+        <h2 className="mb-6 heading text-3xl text-zinc-900 md:text-4xl dark:text-white">
           {t("heading")}
         </h2>
         <p className="mb-12 text-xl text-zinc-600 dark:text-zinc-400">{t("quote")}</p>
@@ -21,7 +21,7 @@ export default function About() {
         <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
           {stats.map((stat) => (
             <div key={stat.label}>
-              <p className="font-serif text-3xl font-bold italic text-brand-red md:text-4xl">
+              <p className="heading text-3xl text-brand-red md:text-4xl">
                 {stat.value}
               </p>
               <p className="text-sm text-zinc-500 dark:text-zinc-400">{stat.label}</p>
