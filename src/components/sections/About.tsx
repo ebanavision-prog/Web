@@ -1,14 +1,12 @@
-import { useTranslations } from "next-intl";
+import { getTranslations, getLocale } from "next-intl/server";
+import { getAboutStats } from "@/lib/content";
+import { pickText } from "@/lib/localized";
+import type { AppLocale } from "@/i18n/routing";
 
-export default function About() {
-  const t = useTranslations("about");
-
-  const stats = [
-    { value: t("stat1Value"), label: t("stat1Label") },
-    { value: t("stat2Value"), label: t("stat2Label") },
-    { value: t("stat3Value"), label: t("stat3Label") },
-    { value: t("stat4Value"), label: t("stat4Label") },
-  ];
+export default async function About() {
+  const t = await getTranslations("about");
+  const locale = (await getLocale()) as AppLocale;
+  const stats = await getAboutStats();
 
   return (
     <section id="nosotros" className="bg-white py-24 dark:bg-zinc-950">
@@ -18,16 +16,18 @@ export default function About() {
         </h2>
         <p className="mb-12 text-xl text-zinc-600 dark:text-zinc-400">{t("quote")}</p>
 
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-          {stats.map((stat) => (
-            <div key={stat.label}>
-              <p className="heading text-3xl text-brand-red md:text-4xl">
-                {stat.value}
-              </p>
-              <p className="text-sm text-zinc-500 dark:text-zinc-400">{stat.label}</p>
-            </div>
-          ))}
-        </div>
+        {stats.length > 0 && (
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+            {stats.map((stat) => (
+              <div key={stat.id}>
+                <p className="heading text-3xl text-brand-red md:text-4xl">{stat.value}</p>
+                <p className="text-sm text-zinc-500 dark:text-zinc-400">
+                  {pickText(stat.label, locale)}
+                </p>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

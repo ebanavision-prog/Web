@@ -29,25 +29,11 @@
     "detailsCta": "Learn more"
   },
   "process": {
-    "heading": "How we work",
-    "step1Title": "Strategic Consulting",
-    "step1Desc": "We understand your brand, audience and goals before moving a single camera.",
-    "step2Title": "Elite Production",
-    "step2Desc": "Professional crew, art direction and attention to detail in every shot.",
-    "step3Title": "Delivery & Impact",
-    "step3Desc": "Optimized content ready to drive real results."
+    "heading": "How we work"
   },
   "about": {
     "heading": "About Us",
-    "quote": "We don't just capture moments. We build brands.",
-    "stat1Value": "250+",
-    "stat1Label": "Projects",
-    "stat2Value": "7+",
-    "stat2Label": "Years",
-    "stat3Value": "100%",
-    "stat3Label": "Passion",
-    "stat4Value": "24/7",
-    "stat4Label": "Support"
+    "quote": "We don't just capture moments. We build brands."
   },
   "testimonials": {
     "heading": "Testimonials",

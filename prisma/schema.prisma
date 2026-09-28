@@ -105,6 +105,22 @@ model Section {
   sortOrder Int     @default(0)
 }
 
+model ProcessStep {
+  id          Int     @id @default(autoincrement())
+  title       Json
+  description Json
+  sortOrder   Int     @default(0)
+  published   Boolean @default(true)
+}
+
+model AboutStat {
+  id        Int     @id @default(autoincrement())
+  value     String
+  label     Json
+  sortOrder Int     @default(0)
+  published Boolean @default(true)
+}
+
 model SiteSetting {
   id                 Int      @id @default(1)
   whatsappNumber     String?

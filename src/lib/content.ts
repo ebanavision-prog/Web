@@ -31,3 +31,11 @@ export const getBlogPosts = cache(async () => {
     orderBy: { publishedAt: "desc" },
   });
 });
+
+export const getProcessSteps = cache(async () => {
+  return db.processStep.findMany({ where: { published: true }, orderBy: { sortOrder: "asc" } });
+});
+
+export const getAboutStats = cache(async () => {
+  return db.aboutStat.findMany({ where: { published: true }, orderBy: { sortOrder: "asc" } });
+});

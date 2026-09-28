@@ -29,25 +29,11 @@
     "detailsCta": "En savoir plus"
   },
   "process": {
-    "heading": "Comment nous travaillons",
-    "step1Title": "Conseil Stratégique",
-    "step1Desc": "Nous comprenons votre marque, votre public et vos objectifs avant de bouger une seule caméra.",
-    "step2Title": "Production d'Élite",
-    "step2Desc": "Équipe professionnelle, direction artistique et souci du détail à chaque prise.",
-    "step3Title": "Livraison et Impact",
-    "step3Desc": "Contenu optimisé prêt à générer de vrais résultats."
+    "heading": "Comment nous travaillons"
   },
   "about": {
     "heading": "À propos",
-    "quote": "Nous ne capturons pas seulement des moments. Nous construisons des marques.",
-    "stat1Value": "250+",
-    "stat1Label": "Projets",
-    "stat2Value": "7+",
-    "stat2Label": "Ans",
-    "stat3Value": "100%",
-    "stat3Label": "Passion",
-    "stat4Value": "24/7",
-    "stat4Label": "Support"
+    "quote": "Nous ne capturons pas seulement des moments. Nous construisons des marques."
   },
   "testimonials": {
     "heading": "Témoignages",

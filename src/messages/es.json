@@ -29,25 +29,11 @@
     "detailsCta": "Saber más"
   },
   "process": {
-    "heading": "Cómo trabajamos",
-    "step1Title": "Consultoría Estratégica",
-    "step1Desc": "Entendemos tu marca, tu público y tus objetivos antes de mover una sola cámara.",
-    "step2Title": "Producción de Élite",
-    "step2Desc": "Equipo profesional, dirección de arte y atención al detalle en cada toma.",
-    "step3Title": "Entrega e Impacto",
-    "step3Desc": "Contenido optimizado y listo para generar resultados reales."
+    "heading": "Cómo trabajamos"
   },
   "about": {
     "heading": "Nosotros",
-    "quote": "No solo capturamos momentos. Construimos marcas.",
-    "stat1Value": "250+",
-    "stat1Label": "Proyectos",
-    "stat2Value": "7+",
-    "stat2Label": "Años",
-    "stat3Value": "100%",
-    "stat3Label": "Pasión",
-    "stat4Value": "24/7",
-    "stat4Label": "Soporte"
+    "quote": "No solo capturamos momentos. Construimos marcas."
   },
   "testimonials": {
     "heading": "Testimonios",

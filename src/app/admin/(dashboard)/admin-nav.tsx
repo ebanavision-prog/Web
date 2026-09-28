@@ -8,6 +8,8 @@ const LINKS = [
   { href: "/admin/brands", label: "Marcas" },
   { href: "/admin/testimonials", label: "Testimonios" },
   { href: "/admin/blog", label: "Blog" },
+  { href: "/admin/process", label: "Cómo trabajamos" },
+  { href: "/admin/about-stats", label: "Estadísticas" },
   { href: "/admin/sections", label: "Secciones" },
   { href: "/admin/settings", label: "Ajustes" },
 ];
