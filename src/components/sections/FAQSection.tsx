@@ -10,40 +10,40 @@ export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="bg-zinc-50 py-24 dark:bg-zinc-900">
-      <div className="mx-auto max-w-3xl px-4">
-        <h2 className="mb-12 text-center font-serif text-3xl font-bold italic text-zinc-900 md:text-4xl dark:text-white">
-          {t("heading")}
-        </h2>
+    <div className="rounded-[2rem] border border-zinc-200 bg-white p-6 dark:border-zinc-800 dark:bg-zinc-900 sm:p-8">
+      <h2 className="mb-6 font-serif text-2xl font-bold italic text-zinc-900 dark:text-white">
+        {t("heading")}
+      </h2>
 
-        <div className="space-y-3">
-          {items.map((item, index) => {
-            const isOpen = openIndex === index;
-            return (
-              <div
-                key={item.question}
-                className="overflow-hidden rounded-2xl border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-800"
+      <div className="max-h-96 space-y-2 overflow-y-auto pr-1">
+        {items.map((item, index) => {
+          const isOpen = openIndex === index;
+          return (
+            <div
+              key={item.question}
+              className="overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-800"
+            >
+              <button
+                type="button"
+                onClick={() => setOpenIndex(isOpen ? null : index)}
+                className="flex w-full items-center justify-between px-4 py-3 text-left text-sm font-medium text-zinc-900 dark:text-white"
               >
-                <button
-                  type="button"
-                  onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="flex w-full items-center justify-between px-6 py-4 text-left font-medium text-zinc-900 dark:text-white"
-                >
-                  {item.question}
-                  <ChevronDown
-                    className={`h-5 w-5 shrink-0 text-zinc-400 transition-transform ${
-                      isOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                {isOpen && (
-                  <p className="px-6 pb-4 text-zinc-600 dark:text-zinc-400">{item.answer}</p>
-                )}
-              </div>
-            );
-          })}
-        </div>
+                {item.question}
+                <ChevronDown
+                  className={`h-4 w-4 shrink-0 text-zinc-400 transition-transform ${
+                    isOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {isOpen && (
+                <p className="px-4 pb-3 text-sm text-zinc-600 dark:text-zinc-400">
+                  {item.answer}
+                </p>
+              )}
+            </div>
+          );
+        })}
       </div>
-    </section>
+    </div>
   );
 }
