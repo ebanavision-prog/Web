@@ -25,19 +25,21 @@ export default function NavbarClient({ logoUrl }: { logoUrl: string | null }) {
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-zinc-200 bg-white/90 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/90">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center">
           {logoUrl ? (
-            <div className="relative h-8 w-8">
-              <Image src={logoUrl} alt="Ebana Visión" fill className="object-contain" />
-            </div>
+            <Image
+              src={logoUrl}
+              alt="Ebana Visión Group"
+              width={130}
+              height={67}
+              priority
+              className="h-14 w-auto object-contain"
+            />
           ) : (
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-red text-sm font-bold text-white">
-              EV
+            <span className="font-serif text-lg font-bold italic text-zinc-900 dark:text-white">
+              Ebana Visión
             </span>
           )}
-          <span className="font-serif text-lg font-bold italic text-zinc-900 dark:text-white">
-            Ebana Visión
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
