@@ -23,6 +23,7 @@ export default function NavbarClient({ logoUrl }: { logoUrl: string | null }) {
   ];
 
   return (
+    <>
     <header className="fixed inset-x-0 top-0 z-40 border-b border-zinc-200 bg-white/90 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/90">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-center">
@@ -73,32 +74,33 @@ export default function NavbarClient({ logoUrl }: { logoUrl: string | null }) {
           <Menu className="h-6 w-6 text-zinc-700 dark:text-white" />
         </button>
       </div>
-
-      {menuOpen && (
-        <div className="fixed inset-0 z-50 flex flex-col bg-white p-6 dark:bg-zinc-950 md:hidden">
-          <div className="mb-8 flex justify-end">
-            <button onClick={() => setMenuOpen(false)} aria-label="Cerrar menú">
-              <X className="h-6 w-6 text-zinc-700 dark:text-white" />
-            </button>
-          </div>
-          <nav className="flex flex-col gap-6 text-lg">
-            {links.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className="font-medium text-zinc-900 dark:text-white"
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
-          <div className="mt-8 flex items-center gap-4">
-            <LocaleSwitcher />
-            <ThemeToggle />
-          </div>
-        </div>
-      )}
     </header>
+
+    {menuOpen && (
+      <div className="fixed inset-0 z-50 flex flex-col bg-white p-6 dark:bg-zinc-950 md:hidden">
+        <div className="mb-8 flex justify-end">
+          <button onClick={() => setMenuOpen(false)} aria-label="Cerrar menú">
+            <X className="h-6 w-6 text-zinc-700 dark:text-white" />
+          </button>
+        </div>
+        <nav className="flex flex-col gap-6 text-lg">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMenuOpen(false)}
+              className="font-medium text-zinc-900 dark:text-white"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+        <div className="mt-8 flex items-center gap-4">
+          <LocaleSwitcher />
+          <ThemeToggle />
+        </div>
+      </div>
+    )}
+    </>
   );
 }
