@@ -5,6 +5,7 @@ import { setRequestLocale } from "next-intl/server";
 import { routing, type AppLocale } from "@/i18n/routing";
 import { getSiteSettings } from "@/lib/content";
 import { pickText } from "@/lib/localized";
+import PageViewTracker from "@/components/analytics/PageViewTracker";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ebanavision.com";
 
@@ -93,6 +94,7 @@ export default async function LocaleLayout({
         style={{ "--font-heading": headingFontVar } as React.CSSProperties}
         className="flex min-h-full flex-1 flex-col"
       >
+        <PageViewTracker />
         {children}
       </div>
     </NextIntlClientProvider>

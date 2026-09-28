@@ -58,6 +58,9 @@ export async function destroySession() {
   cookieStore.delete(COOKIE_NAME);
 }
 
+const MAX_FAILED_ATTEMPTS = 5;
+const LOCKOUT_DURATION_MS = 15 * 60 * 1000; // 15 minutes
+
 export async function login(
   email: string,
   password: string
@@ -67,9 +70,32 @@ export async function login(
     return { success: false, error: "Credenciales inválidas" };
   }
 
+  if (user.lockedUntil && user.lockedUntil > new Date()) {
+    return {
+      success: false,
+      error: "Cuenta bloqueada temporalmente por demasiados intentos fallidos. Intenta de nuevo más tarde.",
+    };
+  }
+
   const passwordMatches = await bcrypt.compare(password, user.passwordHash);
   if (!passwordMatches) {
+    const failedLoginAttempts = user.failedLoginAttempts + 1;
+    const lockedUntil =
+      failedLoginAttempts >= MAX_FAILED_ATTEMPTS
+        ? new Date(Date.now() + LOCKOUT_DURATION_MS)
+        : null;
+    await db.adminUser.update({
+      where: { id: user.id },
+      data: { failedLoginAttempts, lockedUntil },
+    });
     return { success: false, error: "Credenciales inválidas" };
+  }
+
+  if (user.failedLoginAttempts > 0 || user.lockedUntil) {
+    await db.adminUser.update({
+      where: { id: user.id },
+      data: { failedLoginAttempts: 0, lockedUntil: null },
+    });
   }
 
   await createSession({ sub: String(user.id), email: user.email });

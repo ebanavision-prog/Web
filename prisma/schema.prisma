@@ -28,11 +28,13 @@ enum LeadStatus {
 }
 
 model AdminUser {
-  id           Int      @id @default(autoincrement())
-  email        String   @unique
-  passwordHash String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id                  Int       @id @default(autoincrement())
+  email               String    @unique
+  passwordHash        String
+  failedLoginAttempts Int       @default(0)
+  lockedUntil         DateTime?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
 }
 
 model Service {
@@ -141,6 +143,16 @@ model SiteSetting {
   freeResourceUrl    String?
   fontPairing        String   @default("bold")
   updatedAt          DateTime @updatedAt
+}
+
+model PageView {
+  id        Int      @id @default(autoincrement())
+  path      String
+  locale    String
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([path])
 }
 
 model Lead {

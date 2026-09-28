@@ -9,7 +9,8 @@ const LINKS = [
   { href: "/admin/testimonials", label: "Testimonios" },
   { href: "/admin/blog", label: "Blog" },
   { href: "/admin/process", label: "Cómo trabajamos" },
-  { href: "/admin/about-stats", label: "Estadísticas" },
+  { href: "/admin/about-stats", label: "Cifras (Nosotros)" },
+  { href: "/admin/analytics", label: "Estadísticas" },
   { href: "/admin/sections", label: "Secciones" },
   { href: "/admin/settings", label: "Ajustes" },
 ];
