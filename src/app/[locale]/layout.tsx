@@ -25,6 +25,11 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+// Content under this layout (hero text, services, projects, settings, etc.)
+// comes from the database and is edited live from /admin — force dynamic
+// rendering so those edits show immediately instead of only after a rebuild.
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata({
   params,
 }: {
