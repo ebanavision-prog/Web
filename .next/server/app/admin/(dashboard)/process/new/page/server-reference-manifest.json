@@ -1,0 +1,49 @@
+{
+  "node": {
+    "0001d03d49ee15c3aae8d760a074259e1e13934a3c": {
+      "workers": {
+        "app/admin/(dashboard)/process/new/page": {
+          "moduleId": 38087,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/admin/(dashboard)/logout-action.ts"
+    },
+    "409ee833caa0fee1dcc31e8ec2bcdf8f31053d9402": {
+      "workers": {
+        "app/admin/(dashboard)/process/new/page": {
+          "moduleId": 38087,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteProcessStep",
+      "filename": "src/app/admin/(dashboard)/process/actions.ts"
+    },
+    "40c7ee161d89d8cdd6af622921ef35fd42d176d4af": {
+      "workers": {
+        "app/admin/(dashboard)/process/new/page": {
+          "moduleId": 38087,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createProcessStep",
+      "filename": "src/app/admin/(dashboard)/process/actions.ts"
+    },
+    "6057e93db085caf8214f737f85e1a0559f14bfdf70": {
+      "workers": {
+        "app/admin/(dashboard)/process/new/page": {
+          "moduleId": 38087,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateProcessStep",
+      "filename": "src/app/admin/(dashboard)/process/actions.ts"
+    }
+  },
+  "edge": {}
+}

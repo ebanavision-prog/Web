@@ -1,0 +1,16 @@
+{
+  "node": {
+    "601ba925b3f6942424f03ed168412bef91090bf12f": {
+      "workers": {
+        "app/[locale]/page": {
+          "moduleId": 51583,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "submitLead",
+      "filename": "src/app/[locale]/lead-actions.ts"
+    }
+  },
+  "edge": {}
+}

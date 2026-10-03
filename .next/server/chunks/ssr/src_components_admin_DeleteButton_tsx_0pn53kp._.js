@@ -1,0 +1,3 @@
+module.exports=[68599,a=>{"use strict";var b=a.i(87924),c=a.i(72131);a.s(["default",0,function({action:a}){let[d,e]=(0,c.useState)(!1),[f,g]=(0,c.useTransition)();return d?(0,b.jsxs)("span",{className:"inline-flex items-center gap-2",children:[(0,b.jsx)("button",{disabled:f,onClick:()=>g(async()=>{await a()}),className:"font-medium text-red-500 hover:text-red-400",children:"Confirmar"}),(0,b.jsx)("button",{onClick:()=>e(!1),className:"text-zinc-500 hover:text-zinc-300",children:"Cancelar"})]}):(0,b.jsx)("button",{onClick:()=>e(!0),className:"text-red-500 hover:text-red-400",children:"Eliminar"})}])}];
+
+//# sourceMappingURL=src_components_admin_DeleteButton_tsx_0pn53kp._.js.map

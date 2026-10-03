@@ -1,0 +1,716 @@
+{
+  "node": {
+    "601ba925b3f6942424f03ed168412bef91090bf12f": {
+      "workers": {
+        "app/[locale]/page": {
+          "moduleId": 51583,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/[locale]/lead-actions.ts",
+      "exportedName": "submitLead"
+    },
+    "0001d03d49ee15c3aae8d760a074259e1e13934a3c": {
+      "workers": {
+        "app/admin/(dashboard)/about-stats/[id]/page": {
+          "moduleId": 14216,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/about-stats/new/page": {
+          "moduleId": 14323,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/about-stats/page": {
+          "moduleId": 44919,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/analytics/page": {
+          "moduleId": 79507,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/blog/[id]/page": {
+          "moduleId": 48187,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/blog/new/page": {
+          "moduleId": 52850,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/blog/page": {
+          "moduleId": 60062,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/brands/[id]/page": {
+          "moduleId": 67613,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/brands/new/page": {
+          "moduleId": 90979,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/brands/page": {
+          "moduleId": 21797,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/page": {
+          "moduleId": 19352,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/process/[id]/page": {
+          "moduleId": 99150,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/process/new/page": {
+          "moduleId": 38087,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/process/page": {
+          "moduleId": 92543,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/projects/[id]/page": {
+          "moduleId": 24667,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/projects/new/page": {
+          "moduleId": 78767,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/projects/page": {
+          "moduleId": 67094,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/sections/page": {
+          "moduleId": 40096,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/services/[id]/page": {
+          "moduleId": 82293,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/services/new/page": {
+          "moduleId": 32841,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/services/page": {
+          "moduleId": 63953,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/settings/page": {
+          "moduleId": 74696,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/testimonials/[id]/page": {
+          "moduleId": 64574,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/testimonials/new/page": {
+          "moduleId": 61838,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/testimonials/page": {
+          "moduleId": 43805,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/logout-action.ts",
+      "exportedName": "logoutAction"
+    },
+    "60ec3f009e9ce942f2c70f296666fc71713b144bf5": {
+      "workers": {
+        "app/admin/(dashboard)/page": {
+          "moduleId": 19352,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/actions.ts",
+      "exportedName": "updateLeadStatus"
+    },
+    "40cffb5cf456d0a9d9bee44c0e65927503304771a5": {
+      "workers": {
+        "app/admin/(dashboard)/page": {
+          "moduleId": 19352,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/actions.ts",
+      "exportedName": "deleteLead"
+    },
+    "40d29d60bcf16b3d6f0c78a270b6ab60c78720f23b": {
+      "workers": {
+        "app/admin/(dashboard)/about-stats/[id]/page": {
+          "moduleId": 14216,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/about-stats/new/page": {
+          "moduleId": 14323,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/about-stats/page": {
+          "moduleId": 44919,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/about-stats/actions.ts",
+      "exportedName": "createAboutStat"
+    },
+    "40e773a5c178af7bcf40d1efc4c94d744b8bfb8790": {
+      "workers": {
+        "app/admin/(dashboard)/about-stats/[id]/page": {
+          "moduleId": 14216,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/about-stats/new/page": {
+          "moduleId": 14323,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/about-stats/page": {
+          "moduleId": 44919,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/about-stats/actions.ts",
+      "exportedName": "deleteAboutStat"
+    },
+    "60a02afbe8fbdaef70722ddb4f1770d006062b3952": {
+      "workers": {
+        "app/admin/(dashboard)/about-stats/[id]/page": {
+          "moduleId": 14216,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/about-stats/new/page": {
+          "moduleId": 14323,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/about-stats/page": {
+          "moduleId": 44919,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/about-stats/actions.ts",
+      "exportedName": "updateAboutStat"
+    },
+    "40e4cf6f27816c99276d88316d4dd2441b414c8ab1": {
+      "workers": {
+        "app/admin/(dashboard)/blog/[id]/page": {
+          "moduleId": 48187,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/blog/new/page": {
+          "moduleId": 52850,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/blog/page": {
+          "moduleId": 60062,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/blog/actions.ts",
+      "exportedName": "createBlogPost"
+    },
+    "40e549b775f1b2bd57619ff3dfc6dc4b12846d313f": {
+      "workers": {
+        "app/admin/(dashboard)/blog/[id]/page": {
+          "moduleId": 48187,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/blog/new/page": {
+          "moduleId": 52850,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/blog/page": {
+          "moduleId": 60062,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/blog/actions.ts",
+      "exportedName": "deleteBlogPost"
+    },
+    "60dfcacbbabdf021cb3b91b946179db4f9e683cb8c": {
+      "workers": {
+        "app/admin/(dashboard)/blog/[id]/page": {
+          "moduleId": 48187,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/blog/new/page": {
+          "moduleId": 52850,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/blog/page": {
+          "moduleId": 60062,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/blog/actions.ts",
+      "exportedName": "updateBlogPost"
+    },
+    "407c0ad650a65165102bf0bef2d64dc8ac0f67a945": {
+      "workers": {
+        "app/admin/(dashboard)/blog/[id]/page": {
+          "moduleId": 48187,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/blog/new/page": {
+          "moduleId": 52850,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/brands/[id]/page": {
+          "moduleId": 67613,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/brands/new/page": {
+          "moduleId": 90979,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/projects/[id]/page": {
+          "moduleId": 24667,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/projects/new/page": {
+          "moduleId": 78767,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/services/[id]/page": {
+          "moduleId": 82293,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/services/new/page": {
+          "moduleId": 32841,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/settings/page": {
+          "moduleId": 74696,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/testimonials/[id]/page": {
+          "moduleId": 64574,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/testimonials/new/page": {
+          "moduleId": 61838,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/upload-action.ts",
+      "exportedName": "uploadImageAction"
+    },
+    "4048caa138537489db52bd6dd8d419e199967c9a99": {
+      "workers": {
+        "app/admin/(dashboard)/brands/[id]/page": {
+          "moduleId": 67613,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/brands/new/page": {
+          "moduleId": 90979,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/brands/page": {
+          "moduleId": 21797,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/brands/actions.ts",
+      "exportedName": "deleteBrand"
+    },
+    "408f9ddc088a8fb5a4e43bc7b4011f9a7767b5361a": {
+      "workers": {
+        "app/admin/(dashboard)/brands/[id]/page": {
+          "moduleId": 67613,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/brands/new/page": {
+          "moduleId": 90979,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/brands/page": {
+          "moduleId": 21797,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/brands/actions.ts",
+      "exportedName": "createBrand"
+    },
+    "60f66853042a737a0da4ddde4870f691c39b88a902": {
+      "workers": {
+        "app/admin/(dashboard)/brands/[id]/page": {
+          "moduleId": 67613,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/brands/new/page": {
+          "moduleId": 90979,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/brands/page": {
+          "moduleId": 21797,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/brands/actions.ts",
+      "exportedName": "updateBrand"
+    },
+    "409ee833caa0fee1dcc31e8ec2bcdf8f31053d9402": {
+      "workers": {
+        "app/admin/(dashboard)/process/[id]/page": {
+          "moduleId": 99150,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/process/new/page": {
+          "moduleId": 38087,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/process/page": {
+          "moduleId": 92543,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/process/actions.ts",
+      "exportedName": "deleteProcessStep"
+    },
+    "40c7ee161d89d8cdd6af622921ef35fd42d176d4af": {
+      "workers": {
+        "app/admin/(dashboard)/process/[id]/page": {
+          "moduleId": 99150,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/process/new/page": {
+          "moduleId": 38087,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/process/page": {
+          "moduleId": 92543,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/process/actions.ts",
+      "exportedName": "createProcessStep"
+    },
+    "6057e93db085caf8214f737f85e1a0559f14bfdf70": {
+      "workers": {
+        "app/admin/(dashboard)/process/[id]/page": {
+          "moduleId": 99150,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/process/new/page": {
+          "moduleId": 38087,
+          "async": false,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/process/page": {
+          "moduleId": 92543,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/process/actions.ts",
+      "exportedName": "updateProcessStep"
+    },
+    "4057dcf7b65fc47a6db7b383517800d67283ee373f": {
+      "workers": {
+        "app/admin/(dashboard)/projects/[id]/page": {
+          "moduleId": 24667,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/projects/new/page": {
+          "moduleId": 78767,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/projects/page": {
+          "moduleId": 67094,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/projects/actions.ts",
+      "exportedName": "createProject"
+    },
+    "40c222b65dd4498bb5985eb81aee2d72bbc0548115": {
+      "workers": {
+        "app/admin/(dashboard)/projects/[id]/page": {
+          "moduleId": 24667,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/projects/new/page": {
+          "moduleId": 78767,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/projects/page": {
+          "moduleId": 67094,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/projects/actions.ts",
+      "exportedName": "deleteProject"
+    },
+    "60ffc2d566e310a37813ceefa22ac119b3a25bdae0": {
+      "workers": {
+        "app/admin/(dashboard)/projects/[id]/page": {
+          "moduleId": 24667,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/projects/new/page": {
+          "moduleId": 78767,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/projects/page": {
+          "moduleId": 67094,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/projects/actions.ts",
+      "exportedName": "updateProject"
+    },
+    "609454622bc913c0f7d1c9095dd878007119279deb": {
+      "workers": {
+        "app/admin/(dashboard)/sections/page": {
+          "moduleId": 40096,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/sections/actions.ts",
+      "exportedName": "toggleSection"
+    },
+    "40631b19c8479ea85aeb2c0662e34f1fa6a129672c": {
+      "workers": {
+        "app/admin/(dashboard)/sections/page": {
+          "moduleId": 40096,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/sections/actions.ts",
+      "exportedName": "reorderSections"
+    },
+    "400f15c70b2da6f9ba1af0377a004d9ca3344d8b24": {
+      "workers": {
+        "app/admin/(dashboard)/services/[id]/page": {
+          "moduleId": 82293,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/services/new/page": {
+          "moduleId": 32841,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/services/page": {
+          "moduleId": 63953,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/services/actions.ts",
+      "exportedName": "deleteService"
+    },
+    "40b11e6b7632234efac425ba702b5763e2a02dc416": {
+      "workers": {
+        "app/admin/(dashboard)/services/[id]/page": {
+          "moduleId": 82293,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/services/new/page": {
+          "moduleId": 32841,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/services/page": {
+          "moduleId": 63953,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/services/actions.ts",
+      "exportedName": "createService"
+    },
+    "6047ffc652c6b58ae6b2c8c33bd8f060cbc6bc0eee": {
+      "workers": {
+        "app/admin/(dashboard)/services/[id]/page": {
+          "moduleId": 82293,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/services/new/page": {
+          "moduleId": 32841,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/services/page": {
+          "moduleId": 63953,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/services/actions.ts",
+      "exportedName": "updateService"
+    },
+    "40cb868dd62dc5c4e71acb554e973481f61fa2cdee": {
+      "workers": {
+        "app/admin/(dashboard)/settings/page": {
+          "moduleId": 74696,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/settings/actions.ts",
+      "exportedName": "updateSettings"
+    },
+    "4064ab50ea020c0cc3c69f386ba1e265c074283e07": {
+      "workers": {
+        "app/admin/(dashboard)/testimonials/[id]/page": {
+          "moduleId": 64574,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/testimonials/new/page": {
+          "moduleId": 61838,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/testimonials/page": {
+          "moduleId": 43805,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/testimonials/actions.ts",
+      "exportedName": "deleteTestimonial"
+    },
+    "4069c90a76ae901c50c97b59c3ff7c6bb5ec693ea8": {
+      "workers": {
+        "app/admin/(dashboard)/testimonials/[id]/page": {
+          "moduleId": 64574,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/testimonials/new/page": {
+          "moduleId": 61838,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/testimonials/page": {
+          "moduleId": 43805,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/testimonials/actions.ts",
+      "exportedName": "createTestimonial"
+    },
+    "6003d6acd36fae27fca8a2eafeb56fbe9470197039": {
+      "workers": {
+        "app/admin/(dashboard)/testimonials/[id]/page": {
+          "moduleId": 64574,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/testimonials/new/page": {
+          "moduleId": 61838,
+          "async": true,
+          "codeHash": null
+        },
+        "app/admin/(dashboard)/testimonials/page": {
+          "moduleId": 43805,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/(dashboard)/testimonials/actions.ts",
+      "exportedName": "updateTestimonial"
+    },
+    "60636916572ff286e9257ab3dae5f5820ad36c1f51": {
+      "workers": {
+        "app/admin/login/page": {
+          "moduleId": 56551,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "filename": "src/app/admin/login/actions.ts",
+      "exportedName": "loginAction"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "placeholder-build-time-key-not-used-at-runtime"
+}

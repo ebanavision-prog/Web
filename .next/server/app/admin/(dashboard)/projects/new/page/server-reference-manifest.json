@@ -1,0 +1,60 @@
+{
+  "node": {
+    "0001d03d49ee15c3aae8d760a074259e1e13934a3c": {
+      "workers": {
+        "app/admin/(dashboard)/projects/new/page": {
+          "moduleId": 78767,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/admin/(dashboard)/logout-action.ts"
+    },
+    "407c0ad650a65165102bf0bef2d64dc8ac0f67a945": {
+      "workers": {
+        "app/admin/(dashboard)/projects/new/page": {
+          "moduleId": 78767,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "uploadImageAction",
+      "filename": "src/app/admin/(dashboard)/upload-action.ts"
+    },
+    "4057dcf7b65fc47a6db7b383517800d67283ee373f": {
+      "workers": {
+        "app/admin/(dashboard)/projects/new/page": {
+          "moduleId": 78767,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createProject",
+      "filename": "src/app/admin/(dashboard)/projects/actions.ts"
+    },
+    "40c222b65dd4498bb5985eb81aee2d72bbc0548115": {
+      "workers": {
+        "app/admin/(dashboard)/projects/new/page": {
+          "moduleId": 78767,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteProject",
+      "filename": "src/app/admin/(dashboard)/projects/actions.ts"
+    },
+    "60ffc2d566e310a37813ceefa22ac119b3a25bdae0": {
+      "workers": {
+        "app/admin/(dashboard)/projects/new/page": {
+          "moduleId": 78767,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateProject",
+      "filename": "src/app/admin/(dashboard)/projects/actions.ts"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,60 @@
+{
+  "node": {
+    "0001d03d49ee15c3aae8d760a074259e1e13934a3c": {
+      "workers": {
+        "app/admin/(dashboard)/services/new/page": {
+          "moduleId": 32841,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/admin/(dashboard)/logout-action.ts"
+    },
+    "407c0ad650a65165102bf0bef2d64dc8ac0f67a945": {
+      "workers": {
+        "app/admin/(dashboard)/services/new/page": {
+          "moduleId": 32841,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "uploadImageAction",
+      "filename": "src/app/admin/(dashboard)/upload-action.ts"
+    },
+    "400f15c70b2da6f9ba1af0377a004d9ca3344d8b24": {
+      "workers": {
+        "app/admin/(dashboard)/services/new/page": {
+          "moduleId": 32841,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteService",
+      "filename": "src/app/admin/(dashboard)/services/actions.ts"
+    },
+    "40b11e6b7632234efac425ba702b5763e2a02dc416": {
+      "workers": {
+        "app/admin/(dashboard)/services/new/page": {
+          "moduleId": 32841,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createService",
+      "filename": "src/app/admin/(dashboard)/services/actions.ts"
+    },
+    "6047ffc652c6b58ae6b2c8c33bd8f060cbc6bc0eee": {
+      "workers": {
+        "app/admin/(dashboard)/services/new/page": {
+          "moduleId": 32841,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateService",
+      "filename": "src/app/admin/(dashboard)/services/actions.ts"
+    }
+  },
+  "edge": {}
+}
