@@ -1,0 +1,49 @@
+{
+  "node": {
+    "0001d03d49ee15c3aae8d760a074259e1e13934a3c": {
+      "workers": {
+        "app/admin/(dashboard)/about-stats/new/page": {
+          "moduleId": 14323,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/admin/(dashboard)/logout-action.ts"
+    },
+    "40d29d60bcf16b3d6f0c78a270b6ab60c78720f23b": {
+      "workers": {
+        "app/admin/(dashboard)/about-stats/new/page": {
+          "moduleId": 14323,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createAboutStat",
+      "filename": "src/app/admin/(dashboard)/about-stats/actions.ts"
+    },
+    "40e773a5c178af7bcf40d1efc4c94d744b8bfb8790": {
+      "workers": {
+        "app/admin/(dashboard)/about-stats/new/page": {
+          "moduleId": 14323,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteAboutStat",
+      "filename": "src/app/admin/(dashboard)/about-stats/actions.ts"
+    },
+    "60a02afbe8fbdaef70722ddb4f1770d006062b3952": {
+      "workers": {
+        "app/admin/(dashboard)/about-stats/new/page": {
+          "moduleId": 14323,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateAboutStat",
+      "filename": "src/app/admin/(dashboard)/about-stats/actions.ts"
+    }
+  },
+  "edge": {}
+}

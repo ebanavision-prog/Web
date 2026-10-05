@@ -1,0 +1,38 @@
+{
+  "node": {
+    "0001d03d49ee15c3aae8d760a074259e1e13934a3c": {
+      "workers": {
+        "app/admin/(dashboard)/sections/page": {
+          "moduleId": 40096,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/admin/(dashboard)/logout-action.ts"
+    },
+    "609454622bc913c0f7d1c9095dd878007119279deb": {
+      "workers": {
+        "app/admin/(dashboard)/sections/page": {
+          "moduleId": 40096,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "toggleSection",
+      "filename": "src/app/admin/(dashboard)/sections/actions.ts"
+    },
+    "40631b19c8479ea85aeb2c0662e34f1fa6a129672c": {
+      "workers": {
+        "app/admin/(dashboard)/sections/page": {
+          "moduleId": 40096,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "reorderSections",
+      "filename": "src/app/admin/(dashboard)/sections/actions.ts"
+    }
+  },
+  "edge": {}
+}

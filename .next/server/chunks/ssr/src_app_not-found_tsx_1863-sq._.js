@@ -1,0 +1,3 @@
+module.exports=[3363,a=>{"use strict";var b=a.i(7997);a.s(["default",0,function(){return(0,b.jsxs)("div",{className:"flex min-h-screen flex-1 flex-col items-center justify-center bg-zinc-950 px-4 text-center text-white",children:[(0,b.jsx)("p",{className:"mb-2 text-6xl font-bold text-red-600",children:"404"}),(0,b.jsx)("h1",{className:"mb-2 text-2xl font-semibold",children:"Página no encontrada"}),(0,b.jsx)("a",{href:"/",className:"rounded-full bg-red-600 px-6 py-3 font-medium",children:"Volver al inicio"})]})}])},17537,function(a){a.n(a.i(3363))}];
+
+//# sourceMappingURL=src_app_not-found_tsx_1863-sq._.js.map

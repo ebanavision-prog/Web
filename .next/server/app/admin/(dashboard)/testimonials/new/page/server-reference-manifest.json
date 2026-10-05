@@ -1,0 +1,60 @@
+{
+  "node": {
+    "0001d03d49ee15c3aae8d760a074259e1e13934a3c": {
+      "workers": {
+        "app/admin/(dashboard)/testimonials/new/page": {
+          "moduleId": 61838,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/admin/(dashboard)/logout-action.ts"
+    },
+    "407c0ad650a65165102bf0bef2d64dc8ac0f67a945": {
+      "workers": {
+        "app/admin/(dashboard)/testimonials/new/page": {
+          "moduleId": 61838,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "uploadImageAction",
+      "filename": "src/app/admin/(dashboard)/upload-action.ts"
+    },
+    "4064ab50ea020c0cc3c69f386ba1e265c074283e07": {
+      "workers": {
+        "app/admin/(dashboard)/testimonials/new/page": {
+          "moduleId": 61838,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteTestimonial",
+      "filename": "src/app/admin/(dashboard)/testimonials/actions.ts"
+    },
+    "4069c90a76ae901c50c97b59c3ff7c6bb5ec693ea8": {
+      "workers": {
+        "app/admin/(dashboard)/testimonials/new/page": {
+          "moduleId": 61838,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createTestimonial",
+      "filename": "src/app/admin/(dashboard)/testimonials/actions.ts"
+    },
+    "6003d6acd36fae27fca8a2eafeb56fbe9470197039": {
+      "workers": {
+        "app/admin/(dashboard)/testimonials/new/page": {
+          "moduleId": 61838,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateTestimonial",
+      "filename": "src/app/admin/(dashboard)/testimonials/actions.ts"
+    }
+  },
+  "edge": {}
+}
