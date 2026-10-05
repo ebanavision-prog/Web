@@ -22,16 +22,6 @@ const nextConfig: NextConfig = {
     serverActions: {
       bodySizeLimit: "15mb",
     },
-    // Next's standalone server normally splits request handling across
-    // multiple internal workers (one per CPU) and forwards Server Actions
-    // between them over a self-referencing HTTP request. On this cPanel/
-    // Passenger host that self-fetch always fails (Passenger doesn't expose
-    // a stable self-addressable host:port the same way a normal reverse
-    // proxy would), and unlike the redirect-replay fetch this one has no
-    // fallback — the action silently never runs, so every admin save/upload
-    // was being dropped. Forcing a single worker removes the cross-worker
-    // forward entirely, since there's nothing to forward to.
-    cpus: 1,
   },
 };
 
