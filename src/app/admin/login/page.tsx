@@ -1,7 +1,23 @@
 "use client";
 
+import Link from "next/link";
+import { Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { useActionState } from "react";
 import { loginAction } from "./actions";
+
+function ResetSuccessBanner() {
+  const searchParams = useSearchParams();
+  const resetSuccess = searchParams.get("reset") === "success";
+
+  if (!resetSuccess) return null;
+
+  return (
+    <p className="mb-4 rounded-lg bg-green-900/40 px-3 py-2 text-sm text-green-400">
+      Contraseña actualizada. Ya puedes iniciar sesión.
+    </p>
+  );
+}
 
 export default function AdminLoginPage() {
   const [state, formAction, isPending] = useActionState(loginAction, undefined);
@@ -13,6 +29,10 @@ export default function AdminLoginPage() {
         className="w-full max-w-sm rounded-3xl border border-zinc-800 bg-zinc-900 p-8"
       >
         <h1 className="mb-6 text-xl font-semibold text-white">Panel de administración</h1>
+
+        <Suspense fallback={null}>
+          <ResetSuccessBanner />
+        </Suspense>
 
         <label className="mb-1 block text-sm text-zinc-400" htmlFor="email">
           Email
@@ -51,6 +71,13 @@ export default function AdminLoginPage() {
         >
           {isPending ? "Entrando..." : "Entrar"}
         </button>
+
+        <Link
+          href="/admin/forgot-password"
+          className="mt-4 block text-center text-sm text-zinc-400 hover:text-white"
+        >
+          ¿Olvidaste tu contraseña?
+        </Link>
       </form>
     </div>
   );

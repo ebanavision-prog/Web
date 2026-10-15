@@ -2,6 +2,7 @@ import "server-only";
 import { cookies } from "next/headers";
 import { SignJWT, jwtVerify } from "jose";
 import bcrypt from "bcryptjs";
+import { randomBytes, createHash } from "crypto";
 import { db } from "./db";
 
 const COOKIE_NAME = "evg_session";
@@ -104,6 +105,65 @@ export async function login(
 
 export async function logout() {
   await destroySession();
+}
+
+const RESET_TOKEN_DURATION_MS = 60 * 60 * 1000; // 1 hour
+
+function hashResetToken(token: string) {
+  return createHash("sha256").update(token).digest("hex");
+}
+
+// Always returns a token so the caller sends a generic "check your email"
+// message regardless of whether the address matched — never leaks account
+// existence to the requester.
+export async function createPasswordResetToken(email: string): Promise<string | null> {
+  const user = await db.adminUser.findUnique({ where: { email } });
+  if (!user) return null;
+
+  const token = randomBytes(32).toString("hex");
+  await db.adminUser.update({
+    where: { id: user.id },
+    data: {
+      resetTokenHash: hashResetToken(token),
+      resetTokenExpiresAt: new Date(Date.now() + RESET_TOKEN_DURATION_MS),
+    },
+  });
+
+  return token;
+}
+
+export async function verifyPasswordResetToken(token: string): Promise<boolean> {
+  const user = await db.adminUser.findUnique({
+    where: { resetTokenHash: hashResetToken(token) },
+  });
+  return Boolean(user && user.resetTokenExpiresAt && user.resetTokenExpiresAt > new Date());
+}
+
+export async function resetPasswordWithToken(
+  token: string,
+  newPassword: string
+): Promise<{ success: boolean; error?: string }> {
+  const user = await db.adminUser.findUnique({
+    where: { resetTokenHash: hashResetToken(token) },
+  });
+
+  if (!user || !user.resetTokenExpiresAt || user.resetTokenExpiresAt <= new Date()) {
+    return { success: false, error: "El enlace ha expirado o no es válido. Solicita uno nuevo." };
+  }
+
+  const passwordHash = await bcrypt.hash(newPassword, 12);
+  await db.adminUser.update({
+    where: { id: user.id },
+    data: {
+      passwordHash,
+      resetTokenHash: null,
+      resetTokenExpiresAt: null,
+      failedLoginAttempts: 0,
+      lockedUntil: null,
+    },
+  });
+
+  return { success: true };
 }
 
 export async function requireSession(): Promise<SessionPayload> {
