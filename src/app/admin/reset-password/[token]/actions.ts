@@ -1,12 +1,12 @@
 "use server";
 
-import { redirect } from "next/navigation";
 import { resetPasswordWithToken } from "@/lib/auth";
 
+// Deliberately does not redirect() server-side — see login/actions.ts for why.
 export async function resetPasswordAction(
-  _prevState: { error?: string } | undefined,
+  _prevState: { error?: string; success?: boolean } | undefined,
   formData: FormData
-): Promise<{ error?: string }> {
+): Promise<{ error?: string; success?: boolean }> {
   const token = String(formData.get("token") ?? "");
   const password = String(formData.get("password") ?? "");
   const confirmPassword = String(formData.get("confirmPassword") ?? "");
@@ -28,5 +28,5 @@ export async function resetPasswordAction(
     return { error: result.error ?? "No se pudo restablecer la contraseña" };
   }
 
-  redirect("/admin/login?reset=success");
+  return { success: true };
 }

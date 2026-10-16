@@ -1,7 +1,6 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { requireSession } from "@/lib/auth";
 import { localizedField } from "@/lib/form-utils";
@@ -17,18 +16,26 @@ function parseForm(formData: FormData) {
 
 export async function createProcessStep(formData: FormData) {
   await requireSession();
-  await db.processStep.create({ data: parseForm(formData) });
+  try {
+    await db.processStep.create({ data: parseForm(formData) });
+  } catch (err) {
+    return { success: false, error: err instanceof Error ? err.message : "Error al guardar" };
+  }
   revalidatePath("/admin/process");
   revalidatePath("/[locale]", "page");
-  redirect("/admin/process");
+  return { success: true };
 }
 
 export async function updateProcessStep(id: number, formData: FormData) {
   await requireSession();
-  await db.processStep.update({ where: { id }, data: parseForm(formData) });
+  try {
+    await db.processStep.update({ where: { id }, data: parseForm(formData) });
+  } catch (err) {
+    return { success: false, error: err instanceof Error ? err.message : "Error al guardar" };
+  }
   revalidatePath("/admin/process");
   revalidatePath("/[locale]", "page");
-  redirect("/admin/process");
+  return { success: true };
 }
 
 export async function deleteProcessStep(id: number) {

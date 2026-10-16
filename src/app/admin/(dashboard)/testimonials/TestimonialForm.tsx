@@ -3,6 +3,7 @@
 import type { Testimonial } from "@prisma/client";
 import LocaleTabsField from "@/components/admin/LocaleTabsField";
 import ImageUploadField from "@/components/admin/ImageUploadField";
+import AdminForm from "@/components/admin/AdminForm";
 
 type LocalizedText = { es?: string; en?: string; fr?: string };
 
@@ -11,13 +12,13 @@ export default function TestimonialForm({
   action,
 }: {
   testimonial?: Testimonial;
-  action: (formData: FormData) => void;
+  action: (formData: FormData) => Promise<{ success: boolean; error?: string }>;
 }) {
   const role = (testimonial?.role as LocalizedText) ?? {};
   const quote = (testimonial?.quote as LocalizedText) ?? {};
 
   return (
-    <form action={action} className="max-w-2xl">
+    <AdminForm action={action} redirectTo="/admin/testimonials" className="max-w-2xl">
       <div className="mb-5">
         <label className="mb-1 block text-sm text-zinc-400">Nombre</label>
         <input
@@ -52,13 +53,6 @@ export default function TestimonialForm({
         />
         Publicado
       </label>
-
-      <button
-        type="submit"
-        className="rounded-lg bg-red-600 px-5 py-2 font-medium text-white hover:bg-red-700"
-      >
-        Guardar
-      </button>
-    </form>
+    </AdminForm>
   );
 }

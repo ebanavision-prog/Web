@@ -2,16 +2,17 @@
 
 import type { Brand } from "@prisma/client";
 import ImageUploadField from "@/components/admin/ImageUploadField";
+import AdminForm from "@/components/admin/AdminForm";
 
 export default function BrandForm({
   brand,
   action,
 }: {
   brand?: Brand;
-  action: (formData: FormData) => void;
+  action: (formData: FormData) => Promise<{ success: boolean; error?: string }>;
 }) {
   return (
-    <form action={action} className="max-w-2xl">
+    <AdminForm action={action} redirectTo="/admin/brands" className="max-w-2xl">
       <div className="mb-5">
         <label className="mb-1 block text-sm text-zinc-400">Nombre</label>
         <input
@@ -39,13 +40,6 @@ export default function BrandForm({
         <input type="checkbox" name="published" defaultChecked={brand?.published ?? true} />
         Publicado
       </label>
-
-      <button
-        type="submit"
-        className="rounded-lg bg-red-600 px-5 py-2 font-medium text-white hover:bg-red-700"
-      >
-        Guardar
-      </button>
-    </form>
+    </AdminForm>
   );
 }

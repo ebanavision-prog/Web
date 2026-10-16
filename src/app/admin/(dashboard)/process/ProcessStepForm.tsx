@@ -2,6 +2,7 @@
 
 import type { ProcessStep } from "@prisma/client";
 import LocaleTabsField from "@/components/admin/LocaleTabsField";
+import AdminForm from "@/components/admin/AdminForm";
 
 type LocalizedText = { es?: string; en?: string; fr?: string };
 
@@ -10,10 +11,10 @@ export default function ProcessStepForm({
   action,
 }: {
   step?: ProcessStep;
-  action: (formData: FormData) => void;
+  action: (formData: FormData) => Promise<{ success: boolean; error?: string }>;
 }) {
   return (
-    <form action={action} className="max-w-2xl">
+    <AdminForm action={action} redirectTo="/admin/process" className="max-w-2xl">
       <LocaleTabsField
         label="Título"
         name="title"
@@ -41,13 +42,6 @@ export default function ProcessStepForm({
         <input type="checkbox" name="published" defaultChecked={step?.published ?? true} />
         Publicado
       </label>
-
-      <button
-        type="submit"
-        className="rounded-lg bg-red-600 px-5 py-2 font-medium text-white hover:bg-red-700"
-      >
-        Guardar
-      </button>
-    </form>
+    </AdminForm>
   );
 }

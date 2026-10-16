@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { Suspense, useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useActionState } from "react";
 import { loginAction } from "./actions";
 
@@ -21,6 +21,14 @@ function ResetSuccessBanner() {
 
 export default function AdminLoginPage() {
   const [state, formAction, isPending] = useActionState(loginAction, undefined);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (state?.success) {
+      router.push("/admin");
+      router.refresh();
+    }
+  }, [state?.success, router]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-950 px-4">

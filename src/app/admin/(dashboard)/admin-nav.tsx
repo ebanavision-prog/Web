@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { logoutAction } from "./logout-action";
+import LogoutButton from "@/components/admin/LogoutButton";
 
 const LINKS = [
   { href: "/admin", label: "Leads" },
@@ -28,11 +28,7 @@ export default function AdminNav({ email }: { email: string }) {
         </nav>
         <div className="flex items-center gap-3 text-sm text-zinc-400">
           <span>{email}</span>
-          <form action={logoutAction}>
-            <button type="submit" className="text-red-500 hover:text-red-400">
-              Salir
-            </button>
-          </form>
+          <LogoutButton />
         </div>
       </div>
     </header>

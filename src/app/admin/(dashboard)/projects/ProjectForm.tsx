@@ -3,6 +3,7 @@
 import type { Project } from "@prisma/client";
 import LocaleTabsField from "@/components/admin/LocaleTabsField";
 import ImageUploadField from "@/components/admin/ImageUploadField";
+import AdminForm from "@/components/admin/AdminForm";
 import { ALL_CATEGORIES, categoryLabel } from "@/lib/categories";
 
 type LocalizedText = { es?: string; en?: string; fr?: string };
@@ -12,13 +13,13 @@ export default function ProjectForm({
   action,
 }: {
   project?: Project;
-  action: (formData: FormData) => void;
+  action: (formData: FormData) => Promise<{ success: boolean; error?: string }>;
 }) {
   const title = (project?.title as LocalizedText) ?? {};
   const description = (project?.description as LocalizedText) ?? {};
 
   return (
-    <form action={action} className="max-w-2xl">
+    <AdminForm action={action} redirectTo="/admin/projects" className="max-w-2xl">
       <LocaleTabsField label="Título" name="title" defaultValues={title} required />
       <LocaleTabsField
         label="Descripción"
@@ -84,13 +85,6 @@ export default function ProjectForm({
         />
         Publicado
       </label>
-
-      <button
-        type="submit"
-        className="rounded-lg bg-red-600 px-5 py-2 font-medium text-white hover:bg-red-700"
-      >
-        Guardar
-      </button>
-    </form>
+    </AdminForm>
   );
 }

@@ -1,12 +1,15 @@
 "use server";
 
-import { redirect } from "next/navigation";
 import { login } from "@/lib/auth";
 
+// Deliberately does not redirect() server-side — that triggers Next's
+// redirect-replay self-fetch, which is unreliable on this Passenger host and
+// leaves the login button looking frozen with no confirmation. The client
+// navigates instead once this resolves successfully (see login/page.tsx).
 export async function loginAction(
-  _prevState: { error?: string } | undefined,
+  _prevState: { error?: string; success?: boolean } | undefined,
   formData: FormData
-): Promise<{ error?: string }> {
+): Promise<{ error?: string; success?: boolean }> {
   const email = String(formData.get("email") ?? "").trim();
   const password = String(formData.get("password") ?? "");
 
@@ -19,5 +22,5 @@ export async function loginAction(
     return { error: result.error ?? "Credenciales inválidas" };
   }
 
-  redirect("/admin");
+  return { success: true };
 }

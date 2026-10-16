@@ -1,7 +1,6 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { requireSession } from "@/lib/auth";
 import { localizedField, slugify } from "@/lib/form-utils";
@@ -30,17 +29,25 @@ export async function createProject(formData: FormData) {
     slug = `${baseSlug}-${++suffix}`;
   }
 
-  await db.project.create({ data: { ...data, slug } });
+  try {
+    await db.project.create({ data: { ...data, slug } });
+  } catch (err) {
+    return { success: false, error: err instanceof Error ? err.message : "Error al guardar" };
+  }
   revalidatePath("/admin/projects");
-  redirect("/admin/projects");
+  return { success: true };
 }
 
 export async function updateProject(id: number, formData: FormData) {
   await requireSession();
   const data = parseProjectForm(formData);
-  await db.project.update({ where: { id }, data });
+  try {
+    await db.project.update({ where: { id }, data });
+  } catch (err) {
+    return { success: false, error: err instanceof Error ? err.message : "Error al guardar" };
+  }
   revalidatePath("/admin/projects");
-  redirect("/admin/projects");
+  return { success: true };
 }
 
 export async function deleteProject(id: number) {

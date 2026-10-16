@@ -3,6 +3,7 @@
 import type { Service } from "@prisma/client";
 import LocaleTabsField from "@/components/admin/LocaleTabsField";
 import ImageUploadField from "@/components/admin/ImageUploadField";
+import AdminForm from "@/components/admin/AdminForm";
 import { ALL_CATEGORIES, categoryLabel } from "@/lib/categories";
 
 const ICONS = ["camera", "video", "pen-tool", "printer", "target", "award"] as const;
@@ -15,7 +16,7 @@ export default function ServiceForm({
   action,
 }: {
   service?: Service;
-  action: (formData: FormData) => void;
+  action: (formData: FormData) => Promise<{ success: boolean; error?: string }>;
 }) {
   const title = (service?.title as LocalizedText) ?? {};
   const description = (service?.description as LocalizedText) ?? {};
@@ -25,7 +26,7 @@ export default function ServiceForm({
   const detailsToText = (list?: string[]) => (list ?? []).join("\n");
 
   return (
-    <form action={action} className="max-w-2xl">
+    <AdminForm action={action} redirectTo="/admin/services" className="max-w-2xl">
       <LocaleTabsField label="Título" name="title" defaultValues={title} required />
       <LocaleTabsField
         label="Descripción corta"
@@ -99,13 +100,6 @@ export default function ServiceForm({
         />
         Publicado
       </label>
-
-      <button
-        type="submit"
-        className="rounded-lg bg-red-600 px-5 py-2 font-medium text-white hover:bg-red-700"
-      >
-        Guardar
-      </button>
-    </form>
+    </AdminForm>
   );
 }

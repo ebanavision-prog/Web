@@ -1,7 +1,6 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { requireSession } from "@/lib/auth";
 import { localizedField, localizedListField, slugify } from "@/lib/form-utils";
@@ -31,17 +30,25 @@ export async function createService(formData: FormData) {
     slug = `${baseSlug}-${++suffix}`;
   }
 
-  await db.service.create({ data: { ...data, slug } });
+  try {
+    await db.service.create({ data: { ...data, slug } });
+  } catch (err) {
+    return { success: false, error: err instanceof Error ? err.message : "Error al guardar" };
+  }
   revalidatePath("/admin/services");
-  redirect("/admin/services");
+  return { success: true };
 }
 
 export async function updateService(id: number, formData: FormData) {
   await requireSession();
   const data = parseServiceForm(formData);
-  await db.service.update({ where: { id }, data });
+  try {
+    await db.service.update({ where: { id }, data });
+  } catch (err) {
+    return { success: false, error: err instanceof Error ? err.message : "Error al guardar" };
+  }
   revalidatePath("/admin/services");
-  redirect("/admin/services");
+  return { success: true };
 }
 
 export async function deleteService(id: number) {

@@ -1,7 +1,6 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { requireSession } from "@/lib/auth";
 import { localizedField } from "@/lib/form-utils";
@@ -17,18 +16,26 @@ function parseForm(formData: FormData) {
 
 export async function createAboutStat(formData: FormData) {
   await requireSession();
-  await db.aboutStat.create({ data: parseForm(formData) });
+  try {
+    await db.aboutStat.create({ data: parseForm(formData) });
+  } catch (err) {
+    return { success: false, error: err instanceof Error ? err.message : "Error al guardar" };
+  }
   revalidatePath("/admin/about-stats");
   revalidatePath("/[locale]", "page");
-  redirect("/admin/about-stats");
+  return { success: true };
 }
 
 export async function updateAboutStat(id: number, formData: FormData) {
   await requireSession();
-  await db.aboutStat.update({ where: { id }, data: parseForm(formData) });
+  try {
+    await db.aboutStat.update({ where: { id }, data: parseForm(formData) });
+  } catch (err) {
+    return { success: false, error: err instanceof Error ? err.message : "Error al guardar" };
+  }
   revalidatePath("/admin/about-stats");
   revalidatePath("/[locale]", "page");
-  redirect("/admin/about-stats");
+  return { success: true };
 }
 
 export async function deleteAboutStat(id: number) {

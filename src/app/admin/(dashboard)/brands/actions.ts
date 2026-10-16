@@ -1,7 +1,6 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
 import { requireSession } from "@/lib/auth";
 
@@ -16,16 +15,24 @@ function parseBrandForm(formData: FormData) {
 
 export async function createBrand(formData: FormData) {
   await requireSession();
-  await db.brand.create({ data: parseBrandForm(formData) });
+  try {
+    await db.brand.create({ data: parseBrandForm(formData) });
+  } catch (err) {
+    return { success: false, error: err instanceof Error ? err.message : "Error al guardar" };
+  }
   revalidatePath("/admin/brands");
-  redirect("/admin/brands");
+  return { success: true };
 }
 
 export async function updateBrand(id: number, formData: FormData) {
   await requireSession();
-  await db.brand.update({ where: { id }, data: parseBrandForm(formData) });
+  try {
+    await db.brand.update({ where: { id }, data: parseBrandForm(formData) });
+  } catch (err) {
+    return { success: false, error: err instanceof Error ? err.message : "Error al guardar" };
+  }
   revalidatePath("/admin/brands");
-  redirect("/admin/brands");
+  return { success: true };
 }
 
 export async function deleteBrand(id: number) {
