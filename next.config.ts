@@ -7,6 +7,15 @@ const nextConfig: NextConfig = {
   output: "standalone",
   images: {
     remotePatterns: [{ protocol: "https", hostname: "cms.ebanavision.com" }],
+    // The optimizer fetches local /uploads images via a self-referencing
+    // HTTP request before resizing them — the same internal self-fetch that's
+    // unreliable on this Passenger host (see the Server Actions note below).
+    // It fails intermittently ("received null" in logs), serving a broken
+    // image icon for a random subset of admin-uploaded photos. Uploads are
+    // already resized + re-encoded as webp server-side at upload time
+    // (src/lib/upload.ts), so the extra optimization pass is redundant
+    // anyway — serve the already-optimized files directly instead.
+    unoptimized: true,
   },
   // Type errors are already gated by `tsc --noEmit` before every commit;
   // skipping the redundant re-check here avoids OOM kills during `next build`
