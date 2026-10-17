@@ -1,0 +1,3 @@
+{
+  "/admin/reset-password/[token]/page": "app/admin/reset-password/[token]/page.js"
+}

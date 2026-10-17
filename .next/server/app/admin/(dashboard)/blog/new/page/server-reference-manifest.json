@@ -1,0 +1,60 @@
+{
+  "node": {
+    "0001d03d49ee15c3aae8d760a074259e1e13934a3c": {
+      "workers": {
+        "app/admin/(dashboard)/blog/new/page": {
+          "moduleId": 52850,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/admin/(dashboard)/logout-action.ts"
+    },
+    "407c0ad650a65165102bf0bef2d64dc8ac0f67a945": {
+      "workers": {
+        "app/admin/(dashboard)/blog/new/page": {
+          "moduleId": 52850,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "uploadImageAction",
+      "filename": "src/app/admin/(dashboard)/upload-action.ts"
+    },
+    "40e4cf6f27816c99276d88316d4dd2441b414c8ab1": {
+      "workers": {
+        "app/admin/(dashboard)/blog/new/page": {
+          "moduleId": 52850,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createBlogPost",
+      "filename": "src/app/admin/(dashboard)/blog/actions.ts"
+    },
+    "40e549b775f1b2bd57619ff3dfc6dc4b12846d313f": {
+      "workers": {
+        "app/admin/(dashboard)/blog/new/page": {
+          "moduleId": 52850,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteBlogPost",
+      "filename": "src/app/admin/(dashboard)/blog/actions.ts"
+    },
+    "60dfcacbbabdf021cb3b91b946179db4f9e683cb8c": {
+      "workers": {
+        "app/admin/(dashboard)/blog/new/page": {
+          "moduleId": 52850,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateBlogPost",
+      "filename": "src/app/admin/(dashboard)/blog/actions.ts"
+    }
+  },
+  "edge": {}
+}

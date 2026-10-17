@@ -1,0 +1,16 @@
+{
+  "node": {
+    "6042b6e6ec7c646ffba2f53d6697a7c9f90e29904a": {
+      "workers": {
+        "app/admin/forgot-password/page": {
+          "moduleId": 17867,
+          "async": false,
+          "codeHash": null
+        }
+      },
+      "exportedName": "requestPasswordResetAction",
+      "filename": "src/app/admin/forgot-password/actions.ts"
+    }
+  },
+  "edge": {}
+}
