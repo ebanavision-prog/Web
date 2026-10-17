@@ -65,6 +65,9 @@ model Project {
   description Json
   videoUrlRaw String?
   image       String
+  // Extra photos for the project detail page gallery, beyond the single
+  // cover `image` shown on the portfolio grid card. Array of upload URLs.
+  gallery     Json?
   sortOrder   Int      @default(0)
   published   Boolean  @default(true)
   createdAt   DateTime @default(now())

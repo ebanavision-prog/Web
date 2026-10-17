@@ -1,7 +1,11 @@
 import { getSiteSettings } from "@/lib/content";
 import ContactClient from "./ContactClient";
 
-export default async function Contact() {
+export default async function Contact({
+  defaultService,
+}: {
+  defaultService?: string;
+}) {
   const settings = await getSiteSettings();
   return (
     <ContactClient
@@ -9,6 +13,7 @@ export default async function Contact() {
       alternativePhone={settings?.alternativePhone ?? null}
       contactEmail={settings?.contactEmail ?? "info@ebanavision.com"}
       address={settings?.address ?? "Bantú, cruce Asonga, Malabo, Guinea Ecuatorial"}
+      defaultService={defaultService}
     />
   );
 }

@@ -3,6 +3,7 @@
 import type { Project } from "@prisma/client";
 import LocaleTabsField from "@/components/admin/LocaleTabsField";
 import ImageUploadField from "@/components/admin/ImageUploadField";
+import GalleryUploadField from "@/components/admin/GalleryUploadField";
 import AdminForm from "@/components/admin/AdminForm";
 import { ALL_CATEGORIES, categoryLabel } from "@/lib/categories";
 
@@ -65,7 +66,13 @@ export default function ProjectForm({
         />
       </div>
 
-      <ImageUploadField name="image" label="Imagen" defaultValue={project?.image} />
+      <ImageUploadField name="image" label="Imagen de portada" defaultValue={project?.image} />
+
+      <GalleryUploadField
+        name="gallery"
+        label="Galería (más fotos de este proyecto, para la página de detalle)"
+        defaultValue={project?.gallery}
+      />
 
       <div className="mb-5">
         <label className="mb-1 block text-sm text-zinc-400">Orden</label>

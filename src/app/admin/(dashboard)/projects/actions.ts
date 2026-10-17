@@ -6,6 +6,16 @@ import { requireSession } from "@/lib/auth";
 import { localizedField, slugify } from "@/lib/form-utils";
 import type { Category } from "@prisma/client";
 
+function parseGallery(formData: FormData): string[] {
+  const raw = String(formData.get("gallery") ?? "[]");
+  try {
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed) ? parsed.filter((url) => typeof url === "string") : [];
+  } catch {
+    return [];
+  }
+}
+
 function parseProjectForm(formData: FormData) {
   return {
     title: localizedField(formData, "title"),
@@ -14,6 +24,7 @@ function parseProjectForm(formData: FormData) {
     category: String(formData.get("category")) as Category,
     videoUrlRaw: String(formData.get("videoUrlRaw") ?? "") || null,
     image: String(formData.get("image") ?? ""),
+    gallery: parseGallery(formData),
     sortOrder: Number(formData.get("sortOrder") ?? 0),
     published: formData.get("published") === "on",
   };

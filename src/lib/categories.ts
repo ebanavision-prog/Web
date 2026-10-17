@@ -11,6 +11,12 @@ export const CATEGORY_LABELS: Record<Category, { es: string; en: string; fr: str
 
 export const ALL_CATEGORIES = Object.keys(CATEGORY_LABELS) as Category[];
 
+// Marketing/Consultoría projects sell an outcome, not an image — render them
+// as a text-forward "case study" card (description always visible) instead
+// of the photo-tile treatment used by every other business unit, since
+// those lines don't reliably have a "product shot" to lead with.
+export const CASE_STUDY_CATEGORIES = new Set<Category>(["MARKETING", "CONSULTORIA"]);
+
 export function categoryLabel(category: Category, locale: "es" | "en" | "fr"): string {
   return CATEGORY_LABELS[category][locale];
 }

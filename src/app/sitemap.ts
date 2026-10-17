@@ -1,13 +1,33 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
+import { getProjects } from "@/lib/content";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ebanavision.com";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  return routing.locales.map((locale) => ({
+// This now queries the DB (for project detail pages), so it can't be
+// statically generated at build time — the CI build (see DEPLOYMENT.md)
+// deliberately runs with an unreachable placeholder DATABASE_URL and would
+// fail otherwise, same reasoning as the `force-dynamic` on
+// src/app/[locale]/layout.tsx.
+export const dynamic = "force-dynamic";
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const homeEntries: MetadataRoute.Sitemap = routing.locales.map((locale) => ({
     url: `${SITE_URL}/${locale}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: locale === routing.defaultLocale ? 1 : 0.8,
   }));
+
+  const projects = await getProjects();
+  const projectEntries: MetadataRoute.Sitemap = projects.flatMap((project) =>
+    routing.locales.map((locale) => ({
+      url: `${SITE_URL}/${locale}/proyectos/${project.slug}`,
+      lastModified: project.updatedAt,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    }))
+  );
+
+  return [...homeEntries, ...projectEntries];
 }

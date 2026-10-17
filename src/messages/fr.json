@@ -28,6 +28,12 @@
     "all": "Tous",
     "detailsCta": "En savoir plus"
   },
+  "projectPage": {
+    "backToPortfolio": "Retour au portfolio",
+    "galleryHeading": "Galerie",
+    "moreWorkHeading": "Plus de projets similaires",
+    "heroCta": "Je veux un projet comme celui-ci"
+  },
   "process": {
     "heading": "Comment nous travaillons"
   },
