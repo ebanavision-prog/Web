@@ -1,0 +1,60 @@
+{
+  "node": {
+    "0001d03d49ee15c3aae8d760a074259e1e13934a3c": {
+      "workers": {
+        "app/admin/(dashboard)/brands/[id]/page": {
+          "moduleId": 67613,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "logoutAction",
+      "filename": "src/app/admin/(dashboard)/logout-action.ts"
+    },
+    "407c0ad650a65165102bf0bef2d64dc8ac0f67a945": {
+      "workers": {
+        "app/admin/(dashboard)/brands/[id]/page": {
+          "moduleId": 67613,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "uploadImageAction",
+      "filename": "src/app/admin/(dashboard)/upload-action.ts"
+    },
+    "4048caa138537489db52bd6dd8d419e199967c9a99": {
+      "workers": {
+        "app/admin/(dashboard)/brands/[id]/page": {
+          "moduleId": 67613,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "deleteBrand",
+      "filename": "src/app/admin/(dashboard)/brands/actions.ts"
+    },
+    "408f9ddc088a8fb5a4e43bc7b4011f9a7767b5361a": {
+      "workers": {
+        "app/admin/(dashboard)/brands/[id]/page": {
+          "moduleId": 67613,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "createBrand",
+      "filename": "src/app/admin/(dashboard)/brands/actions.ts"
+    },
+    "60f66853042a737a0da4ddde4870f691c39b88a902": {
+      "workers": {
+        "app/admin/(dashboard)/brands/[id]/page": {
+          "moduleId": 67613,
+          "async": true,
+          "codeHash": null
+        }
+      },
+      "exportedName": "updateBrand",
+      "filename": "src/app/admin/(dashboard)/brands/actions.ts"
+    }
+  },
+  "edge": {}
+}
