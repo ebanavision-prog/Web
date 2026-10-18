@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
-import { getProjects } from "@/lib/content";
+import { getProjects, getBlogPosts } from "@/lib/content";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ebanavision.com";
 
@@ -29,5 +29,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }))
   );
 
-  return [...homeEntries, ...projectEntries];
+  const blogEntries: MetadataRoute.Sitemap = routing.locales.map((locale) => ({
+    url: `${SITE_URL}/${locale}/blog`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
+  const posts = await getBlogPosts();
+  const blogPostEntries: MetadataRoute.Sitemap = posts.flatMap((post) =>
+    routing.locales.map((locale) => ({
+      url: `${SITE_URL}/${locale}/blog/${post.slug}`,
+      lastModified: post.updatedAt,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    }))
+  );
+
+  return [...homeEntries, ...projectEntries, ...blogEntries, ...blogPostEntries];
 }

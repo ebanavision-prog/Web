@@ -5,7 +5,7 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "testimonials": "Testimonials",
-    "blog": "Blog",
+    "blog": "News",
     "contact": "Contact",
     "cta": "Start a Project"
   },
@@ -46,9 +46,14 @@
     "subheading": "What our clients say"
   },
   "blog": {
-    "heading": "Blog",
+    "heading": "News",
+    "subheading": "News, catalogs and downloadable resources",
     "loadMore": "Load more articles",
-    "readMore": "Read article"
+    "readMore": "Read article",
+    "viewAll": "View all news",
+    "all": "All",
+    "downloadPdf": "Download PDF",
+    "back": "Back to News"
   },
   "faq": {
     "heading": "Frequently asked questions",

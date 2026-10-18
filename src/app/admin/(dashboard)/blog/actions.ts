@@ -13,6 +13,7 @@ function parseBlogForm(formData: FormData) {
     content: localizedField(formData, "content"),
     category: String(formData.get("category") ?? "") || null,
     image: String(formData.get("image") ?? "") || null,
+    fileUrl: String(formData.get("fileUrl") ?? "") || null,
     publishedAt: publishedAtRaw ? new Date(publishedAtRaw) : null,
     published: formData.get("published") === "on",
   };

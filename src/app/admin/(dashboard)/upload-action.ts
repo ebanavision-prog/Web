@@ -1,7 +1,7 @@
 "use server";
 
 import { requireSession } from "@/lib/auth";
-import { saveUploadedImage } from "@/lib/upload";
+import { saveUploadedImage, savePdfUpload } from "@/lib/upload";
 
 export async function uploadImageAction(
   formData: FormData
@@ -18,5 +18,23 @@ export async function uploadImageAction(
     return { url };
   } catch (err) {
     return { error: err instanceof Error ? err.message : "Error al subir la imagen" };
+  }
+}
+
+export async function uploadPdfAction(
+  formData: FormData
+): Promise<{ url?: string; error?: string }> {
+  await requireSession();
+
+  const file = formData.get("file");
+  if (!(file instanceof File) || file.size === 0) {
+    return { error: "No se seleccionó ningún archivo" };
+  }
+
+  try {
+    const url = await savePdfUpload(file);
+    return { url };
+  } catch (err) {
+    return { error: err instanceof Error ? err.message : "Error al subir el PDF" };
   }
 }

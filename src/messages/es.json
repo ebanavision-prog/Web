@@ -5,7 +5,7 @@
     "services": "Servicios",
     "portfolio": "Portafolio",
     "testimonials": "Testimonios",
-    "blog": "Blog",
+    "blog": "Novedades",
     "contact": "Contacto",
     "cta": "Iniciar Proyecto"
   },
@@ -46,9 +46,14 @@
     "subheading": "Lo que dicen nuestros clientes"
   },
   "blog": {
-    "heading": "Blog",
+    "heading": "Novedades",
+    "subheading": "Noticias, catálogos y recursos descargables",
     "loadMore": "Ver más artículos",
-    "readMore": "Leer artículo"
+    "readMore": "Leer artículo",
+    "viewAll": "Ver todas las novedades",
+    "all": "Todos",
+    "downloadPdf": "Descargar PDF",
+    "back": "Volver a Novedades"
   },
   "faq": {
     "heading": "Preguntas frecuentes",

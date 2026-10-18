@@ -3,6 +3,7 @@
 import type { BlogPost } from "@prisma/client";
 import LocaleTabsField from "@/components/admin/LocaleTabsField";
 import ImageUploadField from "@/components/admin/ImageUploadField";
+import PdfUploadField from "@/components/admin/PdfUploadField";
 import AdminForm from "@/components/admin/AdminForm";
 
 type LocalizedText = { es?: string; en?: string; fr?: string };
@@ -32,7 +33,7 @@ export default function BlogForm({
         name="content"
         defaultValues={content}
         multiline
-        hint="Puedes usar HTML simple (párrafos, negritas, enlaces)"
+        hint="Opcional si adjuntas un PDF abajo. Puedes usar HTML simple (párrafos, negritas, enlaces)"
       />
 
       <div className="mb-5">
@@ -46,6 +47,12 @@ export default function BlogForm({
       </div>
 
       <ImageUploadField name="image" label="Imagen destacada" defaultValue={post?.image} />
+
+      <PdfUploadField
+        name="fileUrl"
+        label="PDF adjunto (catálogo, dossier, nota de prensa...)"
+        defaultValue={post?.fileUrl}
+      />
 
       <div className="mb-5">
         <label className="mb-1 block text-sm text-zinc-400">Fecha de publicación</label>

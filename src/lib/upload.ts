@@ -26,3 +26,21 @@ export async function saveUploadedImage(file: File): Promise<string> {
 
   return `/uploads/${filename}`;
 }
+
+export async function savePdfUpload(file: File): Promise<string> {
+  if (file.type !== "application/pdf") {
+    throw new Error("El archivo debe ser un PDF");
+  }
+
+  await mkdir(UPLOADS_DIR, { recursive: true });
+
+  const arrayBuffer = await file.arrayBuffer();
+  const buffer = Buffer.from(arrayBuffer);
+
+  const filename = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}.pdf`;
+  const outputPath = path.join(UPLOADS_DIR, filename);
+
+  await writeFile(outputPath, buffer);
+
+  return `/uploads/${filename}`;
+}
